@@ -1,0 +1,150 @@
+<div style="--bdark:#14311f;--moss:#5f7f62;--moss-l:#9ebb9f;--moss-pale:#e2ebe1;--moss-mid:#c7d8c6;--bg:#f2f5f1;--sec-bg:#e6ede4;--ink:#1b251e;--sub:#71806f;--line:#d5e0d3;--danger:#b1493d;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;display:flex;width:100%;min-height:760px;background:var(--bg);border-radius:12px;overflow:hidden;border:0.5px solid var(--line)">
+
+<div style="width:196px;flex-shrink:0;background:var(--bdark);padding:15px 10px;display:flex;flex-direction:column;gap:9px;font-size:12px">
+<div style="display:flex;align-items:center;gap:8px;color:#fff;font-size:14px;font-weight:500;padding:0 6px 5px"><i class="ti ti-leaf" style="font-size:17px;color:var(--moss-l)" aria-hidden="true"></i>Verdant erp</div>
+<div style="display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:7px;color:#e3ebe2"><i class="ti ti-home" style="font-size:14px" aria-hidden="true"></i>Painel</div>
+<div style="display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:7px;background:var(--moss);color:#fff"><i class="ti ti-package" style="font-size:14px" aria-hidden="true"></i>Produtos</div>
+<div style="padding-left:30px;display:flex;flex-direction:column"><div style="padding:4px 0;color:#a9c0aa">Listagem</div><div style="padding:4px 0;color:#fff;font-weight:500">Cadastro</div></div>
+<div style="display:flex;align-items:center;gap:8px;padding:7px 8px;color:#e3ebe2"><i class="ti ti-users" style="font-size:14px" aria-hidden="true"></i>Clientes</div>
+</div>
+
+<div style="flex:1;min-width:0;padding:22px 26px;display:flex;flex-direction:column;gap:14px;overflow-y:auto">
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<div style="display:flex;flex-direction:column;gap:3px">
+<span style="font-size:11px;color:var(--sub)">Produtos / Cadastro</span>
+<span style="font-size:17px;font-weight:500;color:var(--ink)">Novo produto</span>
+<span style="font-size:12px;color:var(--sub)">Cadastre as informações básicas do produto</span>
+</div>
+</div>
+
+<div style="background:#fff;border:0.5px solid var(--line);border-radius:10px;padding:16px 18px">
+<div style="font-size:12px;font-weight:500;color:var(--ink);margin-bottom:12px">Informações gerais</div>
+<div style="display:flex;flex-direction:column;gap:11px">
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Nome do produto *</label>
+<input type="text" placeholder="Ex: Notebook Dell Inspiron" style="border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--ink);background:#fff;font-family:inherit">
+</div>
+
+<div style="display:grid;grid-template-columns:180px 1fr;gap:10px">
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">SKU/Código *</label>
+<input type="text" placeholder="NOTE-001" style="border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--ink);background:#fff;font-family:inherit">
+</div>
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Categoria *</label>
+<select style="border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--ink);background:#fff;font-family:inherit">
+<option>Selecionar categoria</option>
+<option>Eletrônicos</option>
+<option>Periféricos</option>
+</select>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:180px 1fr;gap:10px">
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Código de barras</label>
+<input type="text" placeholder="1234567890123" style="border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--ink);background:#fff;font-family:inherit">
+</div>
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Marca</label>
+<input type="text" placeholder="Ex: Dell, HP" style="border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--ink);background:#fff;font-family:inherit">
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Descrição</label>
+<textarea placeholder="Descrição breve do produto..." style="border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--ink);background:#fff;font-family:inherit;min-height:56px;resize:vertical"></textarea>
+</div>
+
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+
+<div style="background:#fff;border:0.5px solid var(--line);border-radius:10px;padding:16px 18px">
+<div style="font-size:12px;font-weight:500;color:var(--ink);margin-bottom:12px">Preços</div>
+<div style="display:flex;flex-direction:column;gap:11px">
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Preço de custo</label>
+<div style="display:flex;align-items:center;gap:6px;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:#fff">
+<span style="font-size:12px;color:var(--sub)">R$</span>
+<input type="text" placeholder="800,00" style="border:none;background:transparent;font-size:12px;flex:1;outline:none;color:var(--ink);font-family:inherit">
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Preço de venda *</label>
+<div style="display:flex;align-items:center;gap:6px;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:#fff">
+<span style="font-size:12px;color:var(--sub)">R$</span>
+<input type="text" placeholder="1.000,00" style="border:none;background:transparent;font-size:12px;flex:1;outline:none;color:var(--ink);font-family:inherit">
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Margem de lucro</label>
+<div style="display:flex;align-items:center;justify-content:space-between;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--sec-bg)">
+<span style="font-size:12px;color:var(--ink);font-weight:500">20%</span>
+<span style="font-size:10px;color:var(--sub)">calculado</span>
+</div>
+</div>
+
+</div>
+</div>
+
+<div style="background:#fff;border:0.5px solid var(--line);border-radius:10px;padding:16px 18px">
+<div style="font-size:12px;font-weight:500;color:var(--ink);margin-bottom:12px">Estoque</div>
+<div style="display:flex;flex-direction:column;gap:11px">
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Estoque inicial *</label>
+<div style="display:flex;align-items:center;gap:6px;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:#fff">
+<input type="text" placeholder="25" style="border:none;background:transparent;font-size:12px;flex:1;outline:none;color:var(--ink);font-family:inherit">
+<span style="font-size:11px;color:var(--sub);font-weight:500">UN</span>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Unidade de medida *</label>
+<select style="border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--ink);background:#fff;font-family:inherit">
+<option>UN - Unidade</option>
+<option>KG - Quilograma</option>
+<option>L - Litro</option>
+</select>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<label style="font-size:11px;color:var(--sub)">Estoque mínimo</label>
+<div style="display:flex;align-items:center;gap:6px;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:#fff">
+<input type="text" placeholder="5" style="border:none;background:transparent;font-size:12px;flex:1;outline:none;color:var(--ink);font-family:inherit">
+<span style="font-size:11px;color:var(--sub);font-weight:500">UN</span>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="background:#fff;border:0.5px solid var(--line);border-radius:10px;padding:16px 18px">
+<div style="font-size:12px;font-weight:500;color:var(--ink);margin-bottom:12px">Imagem do produto</div>
+<div style="border:1px dashed var(--moss-mid);border-radius:8px;padding:22px;text-align:center;background:var(--sec-bg);display:flex;flex-direction:column;align-items:center;gap:8px">
+<i class="ti ti-photo" style="font-size:24px;color:var(--sub)" aria-hidden="true"></i>
+<span style="font-size:12px;font-weight:500;color:var(--ink)">Arrastar imagem aqui</span>
+<span style="font-size:11px;color:var(--sub)">PNG, JPG ou WEBP • até 5 MB</span>
+<div style="border:0.5px solid var(--line);border-radius:7px;padding:6px 12px;font-size:11px;color:var(--ink);background:#fff;margin-top:4px">Selecionar arquivo</div>
+</div>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center;padding-top:2px">
+<div style="border:0.5px solid var(--line);border-radius:8px;padding:9px 16px;font-size:12px;color:var(--sub);background:#fff">Cancelar</div>
+<div style="display:flex;gap:8px">
+<div style="border:0.5px solid var(--line);border-radius:8px;padding:9px 16px;font-size:12px;color:var(--ink);background:#fff">Salvar e novo</div>
+<div style="background:var(--moss);color:#fff;padding:9px 16px;border-radius:8px;font-size:12px;font-weight:500">Salvar</div>
+</div>
+</div>
+
+</div>
+</div>
