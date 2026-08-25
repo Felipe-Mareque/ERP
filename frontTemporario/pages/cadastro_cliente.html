@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Cliente — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela" style="min-height:900px">
+
+<div class="sidebar">
+<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
+<div class="sidebar-item"><i class="ti ti-home" aria-hidden="true"></i>Painel</div>
+<div class="sidebar-item"><i class="ti ti-package" aria-hidden="true"></i>Produtos</div>
+<div class="sidebar-item sidebar-item--active"><i class="ti ti-users" aria-hidden="true"></i>Clientes</div>
+<div class="sidebar-subitens"><div class="sidebar-subitem">Listagem</div><div class="sidebar-subitem--ativo">Cadastro</div></div>
+</div>
+
+<div class="conteudo conteudo--scroll conteudo--estreito">
+
+<div class="pagina-titulo">
+<span class="pagina-titulo__breadcrumb">Clientes / Cadastro</span>
+<span class="pagina-titulo__titulo">Novo cliente</span>
+<span class="pagina-titulo__sub">Preencha as informações para cadastrar um novo cliente</span>
+</div>
+
+<div class="card">
+<div class="secao-header">
+<div class="secao-numero">1</div>
+<div class="secao-header__titulo">Identificação</div>
+</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Tipo de pessoa</label>
+<div class="radio-grupo">
+<span class="radio-item"><span class="radio-circulo"></span>Pessoa física</span>
+<span class="radio-item--inativo"><span class="radio-circulo--vazio"></span>Pessoa jurídica</span>
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Nome / Razão social *</label>
+<input type="text" placeholder="Ex: João da Silva" class="form-input">
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">CPF / CNPJ *</label>
+<input type="text" placeholder="000.000.000-00" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Nome fantasia</label>
+<input type="text" placeholder="Opcional" class="form-input">
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="secao-header">
+<div class="secao-numero">2</div>
+<div class="secao-header__titulo">Contato</div>
+</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">E-mail</label>
+<div class="form-input-icone">
+<i class="ti ti-mail" aria-hidden="true"></i>
+<input type="text" placeholder="nome@email.com">
+</div>
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">Telefone</label>
+<input type="text" placeholder="(00) 0000-0000" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Celular</label>
+<input type="text" placeholder="(00) 00000-0000" class="form-input">
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="secao-header">
+<div class="secao-numero">3</div>
+<div class="secao-header__titulo">Endereço</div>
+</div>
+<div class="form-secao">
+
+<div style="display:flex;flex-direction:column;gap:5px;max-width:160px">
+<label class="form-label">CEP *</label>
+<input type="text" placeholder="00000-000" class="form-input">
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 110px;gap:10px">
+<div class="form-grupo">
+<label class="form-label">Rua *</label>
+<input type="text" placeholder="Rua Gonçalves Chaves" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Número *</label>
+<input type="text" placeholder="1290" class="form-input">
+</div>
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">Complemento</label>
+<input type="text" placeholder="Apto, sala, bloco..." class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Bairro *</label>
+<input type="text" placeholder="Centro" class="form-input">
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 90px;gap:10px">
+<div class="form-grupo">
+<label class="form-label">Cidade *</label>
+<input type="text" placeholder="Pelotas" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Estado *</label>
+<select class="form-input">
+<option selected>RS</option>
+<option>SC</option>
+<option>SP</option>
+</select>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="secao-header">
+<div class="secao-numero">4</div>
+<div class="secao-header__titulo">Informações adicionais</div>
+</div>
+<div class="form-secao">
+
+<div style="display:flex;flex-direction:column;gap:5px;max-width:200px">
+<label class="form-label">Código do cliente</label>
+<div class="form-input-readonly">CLI-000143</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Observações</label>
+<textarea placeholder="Notas gerais sobre o cliente..." class="form-input form-textarea"></textarea>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Status</label>
+<span class="status-texto"><span class="status-texto__dot"></span>Ativo</span>
+</div>
+
+</div>
+</div>
+
+<div class="form-acoes" style="justify-content:flex-end">
+<div class="btn btn-secundario--sutil">Cancelar</div>
+<div class="btn btn-primario">Salvar</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

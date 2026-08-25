@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Item — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela">
+
+<div style="text-align:center;font-size:12px;color:var(--sub);margin-bottom:16px">Duas variações do mesmo formulário — o que muda ao trocar o "Tipo de item"</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+
+<!-- COLUNA PRODUTO -->
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="text-align:center;font-size:11px;font-weight:500;color:var(--moss);background:var(--moss-pale);padding:5px;border-radius:6px">TIPO: PRODUTO</div>
+
+<div class="card">
+<div class="card__titulo">Identificação</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Tipo de item</label>
+<div class="radio-grupo">
+<span class="radio-item"><span class="radio-circulo"></span>Produto</span>
+<span class="radio-item--inativo"><span class="radio-circulo--vazio"></span>Serviço</span>
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Nome do item *</label>
+<input type="text" placeholder="Ex: Notebook Dell Inspiron" class="form-input">
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">SKU/Código *</label>
+<input type="text" placeholder="NOTE-001" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Categoria *</label>
+<select class="form-input">
+<option>Eletrônicos</option>
+</select>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Preços</div>
+<div class="form-secao">
+<div class="form-grupo">
+<label class="form-label">Preço de venda *</label>
+<div class="form-input-icone">
+<span style="font-size:12px;color:var(--sub)">R$</span>
+<input type="text" placeholder="1.000,00">
+</div>
+</div>
+</div>
+</div>
+
+<div class="card--destaque">
+<div class="card__titulo--destaque">📦 Estoque</div>
+<div class="form-secao">
+<div class="form-grupo">
+<label class="form-label">Estoque inicial *</label>
+<div class="form-input-icone">
+<input type="text" placeholder="25">
+<span style="font-size:11px;color:var(--sub);font-weight:500">UN</span>
+</div>
+</div>
+<div class="form-grupo">
+<label class="form-label">Unidade de medida *</label>
+<select class="form-input">
+<option>UN - Unidade</option>
+</select>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- COLUNA SERVIÇO -->
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="text-align:center;font-size:11px;font-weight:500;color:var(--moss);background:var(--moss-pale);padding:5px;border-radius:6px">TIPO: SERVIÇO</div>
+
+<div class="card">
+<div class="card__titulo">Identificação</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Tipo de item</label>
+<div class="radio-grupo">
+<span class="radio-item--inativo"><span class="radio-circulo--vazio"></span>Produto</span>
+<span class="radio-item"><span class="radio-circulo"></span>Serviço</span>
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Nome do item *</label>
+<input type="text" placeholder="Ex: Consultoria de TI" class="form-input">
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">SKU/Código *</label>
+<input type="text" placeholder="SERV-001" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Categoria *</label>
+<select class="form-input">
+<option>Consultoria</option>
+</select>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Preços</div>
+<div class="form-secao">
+<div class="form-grupo">
+<label class="form-label">Preço do serviço *</label>
+<div class="form-input-icone">
+<span style="font-size:12px;color:var(--sub)">R$</span>
+<input type="text" placeholder="150,00">
+</div>
+</div>
+</div>
+</div>
+
+<div class="card--destaque">
+<div class="card__titulo--destaque">🛠️ Detalhes do serviço</div>
+<div class="form-secao">
+<div class="form-grupo">
+<label class="form-label">Duração estimada</label>
+<input type="text" placeholder="Ex: 2 horas, 5 dias úteis" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Tipo de cobrança *</label>
+<select class="form-input">
+<option>Valor fixo</option>
+<option>Por hora</option>
+<option>Pacote</option>
+</select>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Produto — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela" style="min-height:760px">
+
+<div class="sidebar">
+<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
+<div class="sidebar-item"><i class="ti ti-home" aria-hidden="true"></i>Painel</div>
+<div class="sidebar-item sidebar-item--active"><i class="ti ti-package" aria-hidden="true"></i>Produtos</div>
+<div class="sidebar-subitens"><div class="sidebar-subitem">Listagem</div><div class="sidebar-subitem--ativo">Cadastro</div></div>
+<div class="sidebar-item"><i class="ti ti-users" aria-hidden="true"></i>Clientes</div>
+</div>
+
+<div class="conteudo conteudo--scroll">
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<div class="pagina-titulo">
+<span class="pagina-titulo__breadcrumb">Produtos / Cadastro</span>
+<span class="pagina-titulo__titulo">Novo produto</span>
+<span class="pagina-titulo__sub">Cadastre as informações básicas do produto</span>
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Informações gerais</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Nome do produto *</label>
+<input type="text" placeholder="Ex: Notebook Dell Inspiron" class="form-input">
+</div>
+
+<div style="display:grid;grid-template-columns:180px 1fr;gap:10px">
+<div class="form-grupo">
+<label class="form-label">SKU/Código *</label>
+<input type="text" placeholder="NOTE-001" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Categoria *</label>
+<select class="form-input">
+<option>Selecionar categoria</option>
+<option>Eletrônicos</option>
+<option>Periféricos</option>
+</select>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:180px 1fr;gap:10px">
+<div class="form-grupo">
+<label class="form-label">Código de barras</label>
+<input type="text" placeholder="1234567890123" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Marca</label>
+<input type="text" placeholder="Ex: Dell, HP" class="form-input">
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Descrição</label>
+<textarea placeholder="Descrição breve do produto..." class="form-input form-textarea"></textarea>
+</div>
+
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+
+<div class="card">
+<div class="card__titulo">Preços</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Preço de custo</label>
+<div class="form-input-icone">
+<span style="font-size:12px;color:var(--sub)">R$</span>
+<input type="text" placeholder="800,00">
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Preço de venda *</label>
+<div class="form-input-icone">
+<span style="font-size:12px;color:var(--sub)">R$</span>
+<input type="text" placeholder="1.000,00">
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Margem de lucro</label>
+<div style="display:flex;align-items:center;justify-content:space-between;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--sec-bg)">
+<span style="font-size:12px;color:var(--ink);font-weight:500">20%</span>
+<span style="font-size:10px;color:var(--sub)">calculado</span>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Estoque</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Estoque inicial *</label>
+<div class="form-input-icone">
+<input type="text" placeholder="25">
+<span style="font-size:11px;color:var(--sub);font-weight:500">UN</span>
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Unidade de medida *</label>
+<select class="form-input">
+<option>UN - Unidade</option>
+<option>KG - Quilograma</option>
+<option>L - Litro</option>
+</select>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Estoque mínimo</label>
+<div class="form-input-icone">
+<input type="text" placeholder="5">
+<span style="font-size:11px;color:var(--sub);font-weight:500">UN</span>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="card__titulo">Imagem do produto</div>
+<div style="border:1px dashed var(--moss-mid);border-radius:8px;padding:22px;text-align:center;background:var(--sec-bg);display:flex;flex-direction:column;align-items:center;gap:8px">
+<i class="ti ti-photo" style="font-size:24px;color:var(--sub)" aria-hidden="true"></i>
+<span style="font-size:12px;font-weight:500;color:var(--ink)">Arrastar imagem aqui</span>
+<span style="font-size:11px;color:var(--sub)">PNG, JPG ou WEBP • até 5 MB</span>
+<div style="border:0.5px solid var(--line);border-radius:7px;padding:6px 12px;font-size:11px;color:var(--ink);background:#fff;margin-top:4px">Selecionar arquivo</div>
+</div>
+</div>
+
+<div class="form-acoes">
+<div class="btn btn-secundario--sutil">Cancelar</div>
+<div class="form-acoes__direita">
+<div class="btn btn-secundario">Salvar e novo</div>
+<div class="btn btn-primario">Salvar</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

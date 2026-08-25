@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clientes — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela" style="min-height:540px">
+
+<div class="sidebar">
+<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
+<div class="sidebar-item"><i class="ti ti-home" aria-hidden="true"></i>Painel</div>
+<div class="sidebar-item"><i class="ti ti-package" aria-hidden="true"></i>Produtos</div>
+<div class="sidebar-item sidebar-item--active"><i class="ti ti-users" aria-hidden="true"></i>Clientes</div>
+<div class="sidebar-subitens"><div class="sidebar-subitem--ativo">Listagem</div><div class="sidebar-subitem">Cadastro</div></div>
+</div>
+
+<div class="conteudo">
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<div class="pagina-titulo">
+<span class="pagina-titulo__titulo">Clientes</span>
+<span class="pagina-titulo__sub">Gerencie clientes, contatos e informações comerciais</span>
+</div>
+<div class="btn btn-primario"><i class="ti ti-plus" style="font-size:13px" aria-hidden="true"></i>Novo cliente</div>
+</div>
+
+<div class="busca">
+<i class="ti ti-search" aria-hidden="true"></i>
+<span style="font-size:12px;color:var(--sub)">Buscar por nome, CPF/CNPJ, código ou telefone...</span>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div style="display:flex;gap:6px">
+<div class="pill--ativo">Todos</div>
+<div class="pill">Ativos</div>
+<div class="pill">Inativos</div>
+</div>
+<div class="seletor-inline">Filtros<i class="ti ti-chevron-down" aria-hidden="true"></i></div>
+</div>
+
+<div class="tabela">
+
+<div style="display:grid;grid-template-columns:44px 1.6fr 1.1fr 1fr 90px;padding:9px 14px;background:var(--sec-bg);font-size:11px;color:var(--sub);font-weight:500">
+<div></div><div>Cliente</div><div>CPF/CNPJ</div><div>Telefone</div><div style="text-align:center">Status</div>
+</div>
+
+<div style="display:grid;grid-template-columns:44px 1.6fr 1.1fr 1fr 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
+<div class="avatar">JS</div>
+<div>João da Silva</div>
+<div style="color:var(--sub)">123.456.789-00</div>
+<div style="color:var(--sub)">(53) 99988-2211</div>
+<div style="text-align:center"><span class="badge badge--ok"><span class="badge__dot"></span>Ativo</span></div>
+</div>
+
+<div style="display:grid;grid-template-columns:44px 1.6fr 1.1fr 1fr 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
+<div class="avatar">EX</div>
+<div>Empresa XYZ Ltda</div>
+<div style="color:var(--sub)">12.345.678/0001-90</div>
+<div style="color:var(--sub)">(53) 3222-1100</div>
+<div style="text-align:center"><span class="badge badge--ok"><span class="badge__dot"></span>Ativo</span></div>
+</div>
+
+<div style="display:grid;grid-template-columns:44px 1.6fr 1.1fr 1fr 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
+<div class="avatar">MS</div>
+<div>Maria Souza</div>
+<div style="color:var(--sub)">987.654.321-11</div>
+<div style="color:var(--sub)">(53) 99877-6655</div>
+<div style="text-align:center"><span class="badge badge--off"><span class="badge__dot"></span>Inativo</span></div>
+</div>
+
+<div style="display:grid;grid-template-columns:44px 1.6fr 1.1fr 1fr 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
+<div class="avatar">DC</div>
+<div>Distribuidora Center</div>
+<div style="color:var(--sub)">45.678.912/0001-33</div>
+<div style="color:var(--sub)">(53) 3225-9988</div>
+<div style="text-align:center"><span class="badge badge--ok"><span class="badge__dot"></span>Ativo</span></div>
+</div>
+
+<div style="display:grid;grid-template-columns:44px 1.6fr 1.1fr 1fr 90px;align-items:center;padding:10px 14px;font-size:12px;color:var(--ink)">
+<div class="avatar">AT</div>
+<div>Ateliê Verde Ltda</div>
+<div style="color:var(--sub)">98.765.432/0001-11</div>
+<div style="color:var(--sub)">(53) 3223-4455</div>
+<div style="text-align:center"><span class="badge badge--ok"><span class="badge__dot"></span>Ativo</span></div>
+</div>
+
+</div>
+
+<div class="paginacao">
+<span class="paginacao__info">Mostrando 5 de 64 clientes</span>
+<div class="paginacao__botoes">
+<div class="paginacao__pagina"><i class="ti ti-chevron-left" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
+<div class="paginacao__pagina--ativa">1</div>
+<div class="paginacao__pagina">2</div>
+<div class="paginacao__pagina">3</div>
+<div class="paginacao__pagina">4</div>
+<div class="paginacao__pagina">5</div>
+<div class="paginacao__pagina"><i class="ti ti-chevron-right" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

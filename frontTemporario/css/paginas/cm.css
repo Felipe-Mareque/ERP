@@ -1,0 +1,120 @@
+/* ============================================
+   cm.css — estilos específicos da página "Configurações — Menu do Sistema"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.cm-1 {
+  min-height: 520px;
+}
+
+.cm-2 {
+  font-size: 13px;
+}
+
+.cm-3 {
+  font-size: 14px;
+  color: var(--moss);
+}
+
+.cm-4 {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.cm-5 {
+  font-size: 11px;
+}
+
+.cm-6 {
+  font-size: 13px;
+  color: var(--moss);
+}
+
+.cm-7 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cm-8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cm-9 {
+  display: grid;
+  grid-template-columns: 1fr 90px 90px 90px;
+  padding: 9px 14px;
+  background: var(--sec-bg);
+  font-size: 11px;
+  color: var(--sub);
+  font-weight: 500;
+}
+
+.cm-10 {
+  text-align: center;
+}
+
+.cm-11 {
+  display: grid;
+  grid-template-columns: 1fr 90px 90px 90px;
+  align-items: center;
+  padding: 9px 14px;
+  border-bottom: 0.5px solid var(--line);
+}
+
+.cm-12 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.cm-13 {
+  display: grid;
+  grid-template-columns: 1fr 90px 90px 90px;
+  align-items: center;
+  padding: 8px 14px 8px 34px;
+  border-bottom: 0.5px solid var(--line);
+}
+
+.cm-14 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.cm-15 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.cm-16 {
+  display: grid;
+  grid-template-columns: 1fr 90px 90px 90px;
+  align-items: center;
+  padding: 8px 14px 8px 54px;
+  border-bottom: 0.5px solid var(--line);
+}
+
+.cm-17 {
+  display: grid;
+  grid-template-columns: 1fr 90px 90px 90px;
+  align-items: center;
+  padding: 8px 14px 8px 34px;
+}
+
+.cm-18 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--moss-pale);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 11px;
+  color: var(--ink);
+}

@@ -1,0 +1,241 @@
+/* ============================================
+   np.css — estilos específicos da página "Novo Pedido"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.np-1 {
+  min-height: 840px;
+}
+
+.np-2 {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.np-3 {
+  font-size: 12px;
+}
+
+.np-4 {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.np-5 {
+  font-size: 13px;
+  color: var(--moss);
+}
+
+.np-6 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.np-7 {
+  font-size: 13px;
+  color: var(--danger);
+}
+
+.np-8 {
+  font-size: 11px;
+}
+
+.np-9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.np-10 {
+  text-align: right;
+}
+
+.np-11 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.np-12 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.np-13 {
+  font-size: 12px;
+  color: var(--sub);
+  flex: 1;
+}
+
+.np-14 {
+  font-size: 11px;
+  color: var(--moss);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.np-15 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--sec-bg);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.np-16 {
+  flex: 1;
+}
+
+.np-17 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.np-18 {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.np-19 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.np-20 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.np-21 {
+  display: grid;
+  grid-template-columns: 1.6fr 90px 90px 80px 90px 26px;
+  padding: 7px 10px;
+  background: var(--sec-bg);
+  border-radius: 6px 6px 0 0;
+  font-size: 10px;
+  color: var(--sub);
+  font-weight: 500;
+}
+
+.np-22 {
+  text-align: center;
+}
+
+.np-23 {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid var(--line);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+
+.np-24 {
+  display: grid;
+  grid-template-columns: 1.6fr 90px 90px 80px 90px 26px;
+  align-items: center;
+  padding: 9px 10px;
+  border-bottom: 0.5px solid var(--line);
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.np-25 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.np-26 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.np-27 {
+  font-size: 10px;
+  color: var(--sub);
+  padding-left: 20px;
+}
+
+.np-28 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.np-29 {
+  text-align: right;
+  color: var(--sub);
+}
+
+.np-30 {
+  text-align: right;
+  font-weight: 500;
+}
+
+.np-31 {
+  padding: 9px 10px;
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.np-32 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.np-33 {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 14px;
+}
+
+.np-34 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.np-35 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.np-36 {
+  border-top: 0.5px solid var(--line);
+  margin-top: 2px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.np-37 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--ink);
+}

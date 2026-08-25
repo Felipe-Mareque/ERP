@@ -1,0 +1,220 @@
+/* ============================================
+   dash.css — estilos específicos da página "Dashboard"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.dash-1 {
+  font-size: 16px;
+  color: var(--sub);
+}
+
+.dash-2 {
+  background: var(--moss);
+}
+
+.dash-3 {
+  background: var(--danger);
+}
+
+.dash-4 {
+  width: 72%;
+}
+
+.dash-5 {
+  font-size: 12px;
+}
+
+.dash-6 {
+  font-size: 13px;
+  color: var(--moss);
+}
+
+.dash-7 {
+  font-size: 11px;
+  color: var(--moss-l);
+}
+
+.dash-8 {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.dash-9 {
+  font-size: 10px;
+  color: var(--sub);
+}
+
+.dash-10 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dash-11 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-12 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dash-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.dash-14 {
+  font-size: 11px;
+  color: var(--sub);
+  white-space: nowrap;
+}
+
+.dash-15 {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.dash-16 {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--sub);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dash-17 {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 8px;
+}
+
+.dash-18 {
+  font-size: 11px;
+  color: var(--ink);
+}
+
+.dash-19 {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.dash-20 {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 8px;
+}
+
+.dash-21 {
+  background: var(--sec-bg);
+  border-radius: 12px;
+  padding: 11px;
+  display: grid;
+  grid-template-columns: 1.5fr 0.75fr 0.75fr;
+  gap: 9px;
+}
+
+.dash-22 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2px;
+}
+
+.dash-23 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.dash-24 {
+  font-size: 9px;
+  color: var(--sub);
+}
+
+.dash-25 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 0.5px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 8px;
+  background: var(--bg);
+  font-size: 10px;
+  color: var(--ink);
+}
+
+.dash-26 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.dash-27 {
+  background: var(--moss-pale);
+  border-radius: 10px;
+  padding: 11px 13px;
+}
+
+.dash-28 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 0.5px solid var(--moss-mid);
+}
+
+.dash-29 {
+  display: flex;
+  gap: 4px;
+}
+
+.dash-30 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.dash-31 {
+  display: grid;
+  grid-template-columns: 56px 1fr 60px 84px;
+  font-size: 10px;
+  color: var(--sub);
+  padding-bottom: 3px;
+  border-bottom: 0.5px solid var(--line);
+}
+
+.dash-32 {
+  display: grid;
+  grid-template-columns: 56px 1fr 60px 84px;
+  font-size: 11px;
+  color: var(--ink);
+  padding: 5px 0;
+  border-bottom: 0.5px solid var(--line);
+  align-items: center;
+}
+
+.dash-33 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dash-34 {
+  display: grid;
+  grid-template-columns: 56px 1fr 60px 84px;
+  font-size: 11px;
+  color: var(--ink);
+  padding: 5px 0;
+  align-items: center;
+}

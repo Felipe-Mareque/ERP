@@ -1,0 +1,112 @@
+/* ============================================
+   ec.css — estilos específicos da página "Edição de Cliente"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.ec-1 {
+  min-height: 780px;
+}
+
+.ec-2 {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.ec-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ec-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ec-5 {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.ec-6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ec-7 {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.ec-8 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.ec-9 {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 10px;
+}
+
+.ec-10 {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 10px;
+}
+
+.ec-11 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.ec-12 {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 10px;
+}
+
+.ec-13 {
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: 10px;
+}
+
+.ec-14 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.ec-15 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.ec-16 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ec-17 {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.ec-18 {
+  color: var(--sub);
+  white-space: nowrap;
+  min-width: 110px;
+}
+
+.ec-19 {
+  color: var(--ink);
+}

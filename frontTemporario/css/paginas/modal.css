@@ -1,0 +1,141 @@
+/* ============================================
+   modal.css — estilos específicos da página "Novo Módulo"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.modal-1 {
+  min-height: 480px;
+}
+
+.modal-2 {
+  font-size: 15px;
+  color: var(--sub);
+}
+
+.modal-3 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.modal-4 {
+  font-size: 16px;
+  color: var(--sub);
+}
+
+.modal-5 {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.modal-6 {
+  position: absolute;
+  inset: 0;
+  background: rgba(20,49,31,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-7 {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(20,49,31,0.25);
+  overflow: hidden;
+}
+
+.modal-8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  border-bottom: 0.5px solid var(--line);
+}
+
+.modal-9 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.modal-10 {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-11 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.modal-12 {
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 12px;
+  background: #fff;
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.modal-13 {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--moss);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-14 {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 0.5px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-15 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 12px;
+  background: #fff;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.modal-16 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 14px 18px;
+  border-top: 0.5px solid var(--line);
+  background: var(--moss-pale);
+}
+
+.modal-17 {
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--sub);
+  border: 0.5px solid var(--line);
+  background: #fff;
+}
+
+.modal-18 {
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #fff;
+  background: var(--moss);
+  font-weight: 500;
+}

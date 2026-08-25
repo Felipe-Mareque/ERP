@@ -1,0 +1,162 @@
+/* ============================================
+   layout.css — sidebar, header de página, grid
+   ============================================ */
+
+/* ---------- Sidebar (treeview) ---------- */
+.sidebar {
+  width: 196px;
+  flex-shrink: 0;
+  background: var(--bdark);
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 12px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 6px 5px;
+}
+
+.sidebar-logo i {
+  font-size: 17px;
+  color: var(--moss-l);
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  border-radius: 7px;
+  color: #e3ebe2;
+}
+
+.sidebar-item i {
+  font-size: 14px;
+}
+
+.sidebar-item--active {
+  background: var(--moss);
+  color: #fff;
+}
+
+.sidebar-item--expandable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 8px;
+  border-radius: 7px;
+}
+
+.sidebar-item--expandable.sidebar-item--active {
+  background: var(--moss);
+  color: #fff;
+}
+
+.sidebar-subitens {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-subitens--recuo2 {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+}
+
+.sidebar-subitem {
+  padding: 4px 0;
+  color: #a9c0aa;
+}
+
+.sidebar-subitem--ativo {
+  padding: 4px 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.sidebar-spacer {
+  flex: 1;
+}
+
+/* ---------- Conteúdo principal ---------- */
+.conteudo {
+  flex: 1;
+  min-width: 0;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.conteudo--scroll {
+  overflow-y: auto;
+}
+
+.conteudo--estreito {
+  max-width: 520px;
+}
+
+/* ---------- Cabeçalho de página ---------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.page-header__textos {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.page-header__breadcrumb {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.page-header__titulo {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.page-header__subtitulo {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+/* ---------- Grid de duas/três colunas para seções lado a lado ---------- */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+/* ---------- Barra de ações no rodapé de formulário ---------- */
+.form-acoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.form-acoes__direita {
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,1059 @@
+/* ============================================
+   componentes.css — elementos reaproveitáveis
+   ============================================ */
+
+/* ---------- Cards ---------- */
+.card {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.card--destaque {
+  background: #fff;
+  border: 0.5px solid var(--moss);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.card--resumo {
+  background: var(--sec-bg);
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.card__titulo {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.card__titulo--destaque {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--moss);
+  margin-bottom: 12px;
+}
+
+.card-indicador {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.card-indicador__label {
+  font-size: 11px;
+  color: var(--sub);
+  margin-bottom: 4px;
+}
+
+.card-indicador__valor {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* ---------- Botões ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-primario {
+  background: var(--moss);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-secundario {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  color: var(--ink);
+}
+
+.btn-secundario--sutil {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  color: var(--sub);
+}
+
+.btn-perigo {
+  background: #fff;
+  border: 0.5px solid var(--danger);
+  color: var(--danger);
+}
+
+/* ---------- Badges de status ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.badge__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.badge--ativo,
+.badge--ok {
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+.badge--ativo .badge__dot,
+.badge--ok .badge__dot {
+  background: var(--ok);
+}
+
+.badge--inativo,
+.badge--off {
+  background: var(--off-bg);
+  color: var(--off);
+}
+.badge--inativo .badge__dot,
+.badge--off .badge__dot {
+  background: var(--off);
+}
+
+.badge--processando,
+.badge--info {
+  background: var(--info-bg);
+  color: var(--info);
+}
+.badge--processando .badge__dot,
+.badge--info .badge__dot {
+  background: var(--info);
+}
+
+.badge--cancelado,
+.badge--danger {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+.badge--cancelado .badge__dot,
+.badge--danger .badge__dot {
+  background: var(--danger);
+}
+
+.badge--categoria {
+  background: var(--sec-bg);
+  color: var(--ink);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.badge--categoria-destaque {
+  background: var(--moss-pale);
+  color: var(--ink);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* ---------- Avatar ---------- */
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--moss-pale);
+  color: var(--moss);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.avatar--md {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--moss-pale);
+  color: var(--moss);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ---------- Campo de busca ---------- */
+.busca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 9px 12px;
+  background: #fff;
+}
+
+.busca span {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.busca i {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+/* ---------- Pills de filtro ---------- */
+.pills {
+  display: flex;
+  gap: 6px;
+}
+
+.pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 0.5px solid var(--line);
+  color: var(--sub);
+  font-size: 11px;
+  background: #fff;
+}
+
+.pill--ativo {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: var(--moss);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* ---------- Dropdown/seletor com chevron ---------- */
+.seletor-inline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.seletor-inline i {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.seletor-caixa {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 9px 12px;
+  background: #fff;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+/* ---------- Formulário ---------- */
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-secao {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.form-label {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  border: 0.5px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--ink);
+  background: #fff;
+  font-family: inherit;
+}
+
+.form-textarea {
+  min-height: 56px;
+  resize: vertical;
+}
+
+.form-input-icone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 0.5px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+.form-input-icone i {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.form-input-icone input {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  flex: 1;
+  outline: none;
+  color: var(--ink);
+  font-family: inherit;
+}
+
+.form-input-readonly {
+  border: 0.5px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--sub);
+  background: var(--sec-bg);
+}
+
+.form-obrigatorio {
+  color: var(--danger);
+}
+
+/* ---------- Radio customizado ---------- */
+.radio-grupo {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-opcao {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.radio-opcao--inativa {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.radio-circulo {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid var(--moss);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-circulo::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--moss);
+}
+
+.radio-circulo--vazio {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  display: inline-flex;
+}
+
+/* ---------- Seção numerada (cadastro de cliente) ---------- */
+.secao-numerada__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.secao-numerada__numero {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--moss);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secao-numerada__titulo {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* ---------- Tabela (listagens) ---------- */
+.tabela {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela__cabecalho {
+  display: grid;
+  padding: 9px 14px;
+  background: var(--sec-bg);
+  font-size: 11px;
+  color: var(--sub);
+  font-weight: 500;
+}
+
+.tabela__linha {
+  display: grid;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 0.5px solid var(--line);
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.tabela__linha:last-child {
+  border-bottom: none;
+}
+
+.tabela__celula--sub {
+  color: var(--sub);
+}
+
+.tabela__celula--right {
+  text-align: right;
+}
+
+.tabela__celula--center {
+  text-align: center;
+}
+
+.tabela__celula--destaque {
+  text-align: right;
+  font-weight: 500;
+}
+
+.tabela__acoes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tabela__acoes i {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.tabela__acoes i.icone-excluir {
+  color: var(--danger);
+}
+
+/* ---------- Mini-tabela (itens de pedido) ---------- */
+.mini-tabela__cabecalho {
+  display: grid;
+  padding: 7px 10px;
+  background: var(--sec-bg);
+  border-radius: 6px 6px 0 0;
+  font-size: 10px;
+  color: var(--sub);
+  font-weight: 500;
+}
+
+.mini-tabela__linha {
+  display: grid;
+  align-items: center;
+  padding: 9px 10px;
+  border: 0.5px solid var(--line);
+  border-top: none;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.mini-tabela__linha:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+/* ---------- Paginação ---------- */
+.paginacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paginacao__info {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.paginacao__botoes {
+  display: flex;
+  gap: 6px;
+}
+
+.paginacao__pagina {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 0.5px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  background: #fff;
+}
+
+.paginacao__pagina--ativa {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: var(--moss);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+/* ---------- Área de upload de imagem ---------- */
+.upload-area {
+  border: 1px dashed var(--moss-mid);
+  border-radius: 8px;
+  padding: 22px;
+  text-align: center;
+  background: var(--sec-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.upload-area__titulo {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.upload-area__sub {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.upload-area__botao {
+  border: 0.5px solid var(--line);
+  border-radius: 7px;
+  padding: 6px 12px;
+  font-size: 11px;
+  color: var(--ink);
+  background: #fff;
+  margin-top: 4px;
+}
+
+/* ---------- Linha divisória / separador de rodapé ---------- */
+.rodape-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--moss-pale);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 11px;
+  color: var(--ink);
+}
+
+/* ---------- Círculo numerado (seções de formulário em etapas) ---------- */
+.secao-numero {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--moss);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secao-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.secao-header__titulo {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* ---------- Status com bolinha (texto simples, não badge) ---------- */
+.status-texto {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--ok);
+  width: fit-content;
+}
+
+.status-texto__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ok);
+}
+
+/* ---------- Radio option (linha com círculo + texto) ---------- */
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.radio-item--inativo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--sub);
+}
+
+/* ---------- Grid utilitário genérico (2 colunas iguais) ---------- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* ---------- Título + subtítulo de página (versão compacta, sem breadcrumb) ---------- */
+.pagina-titulo {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pagina-titulo__breadcrumb {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.pagina-titulo__titulo {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.pagina-titulo__sub {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+/* ---------- Tela de Login (elementos específicos) ---------- */
+.login-marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-marca__icone {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--bdark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-marca__nome {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.login-titulo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.login-titulo__principal {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.login-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+.login-input i {
+  font-size: 15px;
+  color: var(--sub);
+}
+
+.login-input input {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: var(--sub);
+  flex: 1;
+  outline: none;
+  font-family: inherit;
+}
+
+.login-divisor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.login-divisor__linha {
+  flex: 1;
+  height: 0.5px;
+  background: var(--line);
+}
+
+.login-sso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 9px;
+  background: #fff;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.login-lado-form {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 48px;
+  gap: 28px;
+  background: var(--bg);
+}
+
+.login-lado-video {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  background: var(--bdark);
+  display: flex;
+  align-items: flex-end;
+  padding: 32px;
+}
+
+.login-lado-video__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20,49,31,0.15) 0%, rgba(20,49,31,0.75) 100%);
+}
+
+.login-lado-video__tag {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.1);
+  color: #e3ebe2;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.login-lado-video__texto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-lado-video__titulo {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.login-lado-video__desc {
+  font-size: 12px;
+  color: #c3d4c4;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+.login-checkbox {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 0.5px solid var(--line);
+  background: #fff;
+  display: inline-block;
+}
+
+/* ---------- Dashboard: KPI mini-cards ---------- */
+.kpi-card {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+
+.kpi-card__label {
+  font-size: 11px;
+  color: var(--sub);
+  margin-bottom: 3px;
+}
+
+.kpi-card__valor {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.kpi-card__variacao {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.kpi-card__variacao--positiva { color: var(--good); }
+.kpi-card__variacao--negativa { color: var(--sub); }
+.kpi-card__variacao--alerta { color: var(--warn); }
+
+/* ---------- Dashboard: cards de gráfico ---------- */
+.grafico-card {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 11px 13px;
+}
+
+.grafico-card__titulo {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+/* ---------- Dashboard: item fixado (shortcut) ---------- */
+.fixado-card {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.fixado-card__topo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fixado-card--vazio {
+  background: #fff;
+  border: 0.5px dashed var(--line);
+  border-radius: 9px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* ---------- Dashboard: badges pequenos de ação ---------- */
+.mini-badge-aprovar {
+  background: var(--good);
+  color: #fff;
+  font-size: 9px;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.mini-badge-recusar {
+  background: #fff;
+  color: var(--danger);
+  font-size: 9px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: 0.5px solid var(--line);
+}
+
+/* ---------- Dashboard: notificação com bolinha (sino/email) ---------- */
+.icone-notificacao {
+  position: relative;
+}
+
+.icone-notificacao__dot {
+  position: absolute;
+  top: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.icone-notificacao__dot--right4 { right: -4px; }
+.icone-notificacao__dot--right3 { right: -3px; }
+
+/* ---------- Dashboard: avatar de usuário (topo direito) ---------- */
+.avatar-usuario {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: var(--moss-pale);
+  color: var(--moss);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* ---------- Dashboard: barra de meta ---------- */
+.meta-barra {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.meta-barra__trilha {
+  flex: 1;
+  height: 7px;
+  background: var(--moss-mid);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.meta-barra__progresso {
+  height: 100%;
+  background: var(--moss);
+  border-radius: 4px;
+}
+
+/* ---------- Dashboard: texto visualmente escondido (acessibilidade) ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ---------- Dashboard: bolinha de status pequena solta ---------- */
+.status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.status-dot--warn { background: var(--warn); }
+.status-dot--good { background: var(--good); }
+
+/* ---------- Dashboard: cabeçalho de página compacto (sem gap 16, usa 7) ---------- */
+.conteudo--compacto {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* ---------- Dashboard: item do sidebar com submenu (versão antiga v9) ---------- */
+.sidebar-item-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  color: #e3ebe2;
+}
+
+.sidebar-item-toggle__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- Dashboard: item de rodapé da sidebar (Suporte) ---------- */
+.sidebar-item--rodape {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  color: #a9c0aa;
+  border-top: 0.5px solid #244430;
+  margin-top: 2px;
+  padding-top: 11px;
+}
+
+/* ---------- Dashboard: filial/período no cabeçalho ---------- */
+.tag-filial {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--moss-pale);
+  color: var(--moss);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.seletor-periodo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 0.5px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: #fff;
+  font-size: 11px;
+  color: var(--ink);
+}

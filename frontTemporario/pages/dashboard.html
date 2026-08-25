@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="../css/paginas/dash.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela">
+<h2 class="sr-only">Dashboard de ERP completo com fixados, meta, gráfico detalhado, aprovações e pendências</h2>
+<div class="sidebar">
+<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
+<a href="dashboard.html" class="sidebar-item sidebar-item--active"><i class="ti ti-home" aria-hidden="true"></i>Painel</a>
+<div><div class="sidebar-item--expandable"><span class="sidebar-item-toggle__label"><i class="ti ti-package" aria-hidden="true"></i>Produtos</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens"><a href="cadastro_produto.html" class="sidebar-subitem">Cadastro</a><div class="sidebar-subitem">Estoque</div><div class="sidebar-subitem">Movimentações</div></div></div>
+<div><div class="sidebar-item--expandable"><span class="sidebar-item-toggle__label"><i class="ti ti-users" aria-hidden="true"></i>Clientes</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens"><a href="cadastro_cliente.html" class="sidebar-subitem">Cadastro</a><div class="sidebar-subitem">Histórico</div></div></div>
+<a href="#" class="sidebar-item"><i class="ti ti-truck" aria-hidden="true"></i>Fornecedores</a>
+<div><div class="sidebar-item--expandable"><span class="sidebar-item-toggle__label"><i class="ti ti-shopping-cart" aria-hidden="true"></i>Vendas</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens"><a href="listagem_pedidos.html" class="sidebar-subitem">Pedidos</a><div class="sidebar-subitem">Histórico</div></div></div>
+<a href="#" class="sidebar-item"><i class="ti ti-shopping-bag" aria-hidden="true"></i>Compras</a>
+<div><div class="sidebar-item--expandable"><span class="sidebar-item-toggle__label"><i class="ti ti-currency-dollar" aria-hidden="true"></i>Financeiro</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens"><div class="sidebar-subitem">Contas a pagar</div><div class="sidebar-subitem">Contas a receber</div></div></div>
+<div class="sidebar-spacer"></div>
+<div><div class="sidebar-item--expandable"><span class="sidebar-item-toggle__label"><i class="ti ti-settings" aria-hidden="true"></i>Configurações</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens"><div class="sidebar-subitem">Usuários</div><div class="sidebar-subitem">Permissões</div></div></div>
+<a href="#" class="sidebar-item--rodape"><i class="ti ti-headset" aria-hidden="true"></i>Suporte</a>
+</div>
+<div class="conteudo--compacto">
+<div class="dash-10">
+<div class="dash-11"><span class="pagina-titulo__titulo">Boa tarde, Felipe</span><span class="tag-filial"><i class="ti ti-building" aria-hidden="true"></i>Matriz - SP<i class="ti ti-chevron-down" aria-hidden="true"></i></span></div>
+<div class="dash-12">
+<div class="dash-13">
+<div class="seletor-periodo">Este mês<i class="ti ti-chevron-down" aria-hidden="true"></i></div>
+<div class="dash-9">01/08 — 19/08/2026</div>
+</div>
+<i class="ti ti-search dash-1" aria-hidden="true"></i>
+<i class="ti ti-calendar dash-1" aria-hidden="true"></i>
+<div class="icone-notificacao"><i class="ti ti-mail dash-1" aria-hidden="true"></i><div class="icone-notificacao__dot icone-notificacao__dot--right4 dash-2"></div></div>
+<div class="icone-notificacao"><i class="ti ti-bell dash-1" aria-hidden="true"></i><div class="icone-notificacao__dot icone-notificacao__dot--right3 dash-3"></div></div>
+<div class="avatar-usuario">MC</div>
+</div>
+</div>
+<div class="meta-barra">
+<span class="dash-14">Meta do mês</span>
+<div class="meta-barra__trilha"><div class="meta-barra__progresso dash-4"></div></div>
+<span class="dash-15">R$ 128,4k / R$ 180k · 72%</span>
+</div>
+<div>
+<div class="dash-16"><i class="ti ti-pin dash-5" aria-hidden="true"></i>Fixados</div>
+<div class="dash-17">
+<div class="fixado-card"><div class="fixado-card__topo"><i class="ti ti-plus dash-6" aria-hidden="true"></i><i class="ti ti-pin-filled dash-7" aria-hidden="true"></i></div><span class="dash-18">Novo pedido</span></div>
+<div class="fixado-card"><div class="fixado-card__topo"><i class="ti ti-package dash-6" aria-hidden="true"></i><i class="ti ti-pin-filled dash-7" aria-hidden="true"></i></div><span class="dash-18">Estoque</span></div>
+<div class="fixado-card"><div class="fixado-card__topo"><i class="ti ti-currency-dollar dash-6" aria-hidden="true"></i><i class="ti ti-pin-filled dash-7" aria-hidden="true"></i></div><span class="dash-18">Contas a pagar</span></div>
+<div class="fixado-card"><div class="fixado-card__topo"><i class="ti ti-users dash-6" aria-hidden="true"></i><i class="ti ti-pin-filled dash-7" aria-hidden="true"></i></div><span class="dash-18">Clientes</span></div>
+<div class="fixado-card--vazio"><i class="ti ti-plus dash-8" aria-hidden="true"></i><span class="dash-19">Fixar item</span></div>
+</div>
+</div>
+<div class="dash-20">
+<div class="kpi-card"><div class="kpi-card__label">Faturamento</div><div class="kpi-card__valor">R$ 128,4 mil</div><div class="kpi-card__variacao kpi-card__variacao--positiva">↑ 8,2% vs. mês anterior</div></div>
+<div class="kpi-card"><div class="kpi-card__label">A receber</div><div class="kpi-card__valor">R$ 64,2 mil</div><div class="kpi-card__variacao kpi-card__variacao--negativa">↓ 3,1% vs. mês anterior</div></div>
+<div class="kpi-card"><div class="kpi-card__label">A pagar</div><div class="kpi-card__valor">R$ 41,7 mil</div><div class="kpi-card__variacao kpi-card__variacao--alerta">↑ 2,4% vs. mês anterior</div></div>
+<div class="kpi-card"><div class="kpi-card__label">Pedidos</div><div class="kpi-card__valor">37</div><div class="kpi-card__variacao kpi-card__variacao--positiva">↑ 12% vs. mês anterior</div></div>
+</div>
+<div class="dash-21">
+<div class="grafico-card">
+<div class="dash-22"><div><div class="dash-23">Faturamento</div><div class="dash-24">01/08 — 19/08/2026</div></div><div class="dash-25">30 dias<i class="ti ti-chevron-down dash-9" aria-hidden="true"></i></div></div>
+<svg width="100%" viewBox="0 0 400 150">
+<defs><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5f7f62" stop-opacity="0.2"/><stop offset="100%" stop-color="#5f7f62" stop-opacity="0"/></linearGradient></defs>
+<line x1="46" y1="8" x2="392" y2="8" stroke="#eef1ed" stroke-width="1"/>
+<line x1="46" y1="40" x2="392" y2="40" stroke="#eef1ed" stroke-width="1"/>
+<line x1="46" y1="72" x2="392" y2="72" stroke="#eef1ed" stroke-width="1"/>
+<line x1="46" y1="104" x2="392" y2="104" stroke="#eef1ed" stroke-width="1"/>
+<line x1="46" y1="126" x2="392" y2="126" stroke="#dbe3d8" stroke-width="1"/>
+<text x="40" y="12" font-size="8" text-anchor="end" fill="#71806f">150k</text>
+<text x="40" y="44" font-size="8" text-anchor="end" fill="#71806f">112k</text>
+<text x="40" y="76" font-size="8" text-anchor="end" fill="#71806f">75k</text>
+<text x="40" y="108" font-size="8" text-anchor="end" fill="#71806f">37k</text>
+<text x="40" y="130" font-size="8" text-anchor="end" fill="#71806f">0</text>
+<line x1="46" y1="8" x2="46" y2="126" stroke="#dbe3d8" stroke-width="1"/>
+<path d="M46,102 C65,98 78,95 96,97 C112,99 126,82 144,87 C158,91 178,71 194,77 C208,81 228,55 244,60 C258,64 278,38 294,44 C306,48 326,22 342,27 C354,31 374,12 392,17" fill="none" stroke="#5f7f62" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M46,102 C65,98 78,95 96,97 C112,99 126,82 144,87 C158,91 178,71 194,77 C208,81 228,55 244,60 C258,64 278,38 294,44 C306,48 326,22 342,27 C354,31 374,12 392,17 L392,126 L46,126 Z" fill="url(#fg)"/>
+<circle cx="392" cy="17" r="3.5" fill="#5f7f62"/>
+<rect x="352" y="1" width="52" height="13" rx="4" fill="#5f7f62"/>
+<text x="378" y="10" font-size="8" text-anchor="middle" fill="#fff">128,4k</text>
+<text x="46" y="139" font-size="8" text-anchor="middle" fill="#71806f">01/08</text>
+<text x="144" y="139" font-size="8" text-anchor="middle" fill="#71806f">09/08</text>
+<text x="244" y="139" font-size="8" text-anchor="middle" fill="#71806f">14/08</text>
+<text x="342" y="139" font-size="8" text-anchor="middle" fill="#71806f">18/08</text>
+<text x="392" y="139" font-size="8" text-anchor="middle" fill="#71806f">19/08</text>
+</svg>
+</div>
+<div class="grafico-card">
+<div class="grafico-card__titulo">Vendas por categoria</div>
+<svg width="100%" viewBox="0 0 180 130"><g transform="translate(56,52)"><circle r="34" fill="none" stroke="#e5ebe3" stroke-width="11"/><circle r="34" fill="none" stroke="#5f7f62" stroke-width="11" stroke-dasharray="107 214" stroke-linecap="round" transform="rotate(-90)"/><circle r="34" fill="none" stroke="#8b6f47" stroke-width="11" stroke-dasharray="64 214" stroke-linecap="round" stroke-dashoffset="-109" transform="rotate(-90)"/><circle r="34" fill="none" stroke="#c99b52" stroke-width="11" stroke-dasharray="43 214" stroke-linecap="round" stroke-dashoffset="-177" transform="rotate(-90)"/><text x="0" y="-2" font-size="12" font-weight="500" text-anchor="middle" fill="#1b251e">128k</text><text x="0" y="11" font-size="8" text-anchor="middle" fill="#71806f">total</text></g><circle cx="10" cy="108" r="4" fill="#5f7f62"/><text x="19" y="111" font-size="9" fill="#1b251e">Peças 50%</text><circle cx="80" cy="108" r="4" fill="#8b6f47"/><text x="89" y="111" font-size="9" fill="#1b251e">Serv. 30%</text></svg>
+</div>
+<div class="grafico-card">
+<div class="grafico-card__titulo">Pedidos por status</div>
+<svg width="100%" viewBox="0 0 170 130"><line x1="5" y1="103" x2="165" y2="103" stroke="#e5ebe3" stroke-width="1"/><rect x="10" y="47" width="24" height="56" rx="5" fill="#5f7f62"/><text x="22" y="42" font-size="9" text-anchor="middle" fill="#1b251e">52</text><rect x="47" y="63" width="24" height="40" rx="5" fill="#9ebb9f"/><text x="59" y="58" font-size="9" text-anchor="middle" fill="#1b251e">35</text><rect x="84" y="34" width="24" height="69" rx="5" fill="#c99b52"/><text x="96" y="29" font-size="9" text-anchor="middle" fill="#1b251e">65</text><rect x="121" y="80" width="24" height="23" rx="5" fill="#b1493d"/><text x="133" y="75" font-size="9" text-anchor="middle" fill="#1b251e">22</text><text x="22" y="115" font-size="8" text-anchor="middle" fill="#71806f">Conc.</text><text x="59" y="115" font-size="8" text-anchor="middle" fill="#71806f">Envio</text><text x="96" y="115" font-size="8" text-anchor="middle" fill="#71806f">Anál.</text><text x="133" y="115" font-size="8" text-anchor="middle" fill="#71806f">Atras.</text></svg>
+</div>
+</div>
+<div class="dash-26">
+<div class="dash-27">
+<div class="card__titulo">Fila de aprovações</div>
+<div class="dash-28"><div><div class="dash-18">Desconto pedido PED-2401</div><div class="dash-9">15% acima do limite</div></div><div class="dash-29"><span class="mini-badge-aprovar">Aprovar</span><span class="mini-badge-recusar">Recusar</span></div></div>
+<div class="dash-30"><div><div class="dash-18">Compra COM-0951</div><div class="dash-9">Acima de R$ 20 mil</div></div><div class="dash-29"><span class="mini-badge-aprovar">Aprovar</span><span class="mini-badge-recusar">Recusar</span></div></div>
+</div>
+<div class="grafico-card">
+<div class="card__titulo">Pendências do dia</div>
+<div class="dash-31"><div>Tipo</div><div>Descrição</div><div>Prazo</div><div>Status</div></div>
+<div class="dash-32"><div>Pedido</div><div>PED-2381</div><div>Hoje</div><div class="dash-33"><span class="status-dot status-dot--warn"></span>Pendente</div></div>
+<div class="dash-34"><div>Compra</div><div>COM-0942</div><div>2 dias</div><div class="dash-33"><span class="status-dot status-dot--good"></span>Aprovado</div></div>
+</div>
+</div>
+</div>
+</body>
+</html>

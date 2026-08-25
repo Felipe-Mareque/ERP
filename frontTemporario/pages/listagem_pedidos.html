@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedidos — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela" style="min-height:620px">
+
+<div class="sidebar">
+<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
+<div class="sidebar-item"><i class="ti ti-home" aria-hidden="true"></i>Painel</div>
+<div class="sidebar-item"><i class="ti ti-package" aria-hidden="true"></i>Produtos</div>
+<div class="sidebar-item"><i class="ti ti-users" aria-hidden="true"></i>Clientes</div>
+<div class="sidebar-item sidebar-item--active"><i class="ti ti-shopping-cart" aria-hidden="true"></i>Vendas</div>
+<div class="sidebar-subitens"><div class="sidebar-subitem--ativo">Pedidos</div><div class="sidebar-subitem">Histórico</div></div>
+</div>
+
+<div style="flex:1;min-width:0;padding:22px 26px;display:flex;flex-direction:column;gap:14px">
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<div class="pagina-titulo">
+<span class="pagina-titulo__titulo">Pedidos</span>
+<span class="pagina-titulo__sub">Consulte e gerencie os pedidos realizados</span>
+</div>
+<div class="btn btn-primario"><i class="ti ti-plus" style="font-size:13px" aria-hidden="true"></i>Novo pedido</div>
+</div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+<div style="background:#fff;border:0.5px solid var(--line);border-radius:10px;padding:12px 14px">
+<div style="font-size:11px;color:var(--sub);margin-bottom:4px">Pedidos hoje</div>
+<div style="font-size:18px;font-weight:500;color:var(--ink)">12</div>
+</div>
+<div style="background:#fff;border:0.5px solid var(--line);border-radius:10px;padding:12px 14px">
+<div style="font-size:11px;color:var(--sub);margin-bottom:4px">Em andamento</div>
+<div style="font-size:18px;font-weight:500;color:var(--ink)">5</div>
+</div>
+<div style="background:#fff;border:0.5px solid var(--line);border-radius:10px;padding:12px 14px">
+<div style="font-size:11px;color:var(--sub);margin-bottom:4px">Vendas hoje</div>
+<div style="font-size:18px;font-weight:500;color:var(--ink)">R$ 8.450,00</div>
+</div>
+</div>
+
+<div class="busca">
+<i class="ti ti-search" aria-hidden="true"></i>
+<span style="font-size:12px;color:var(--sub)">Buscar por nº do pedido, cliente ou CPF/CNPJ...</span>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div style="display:flex;gap:6px">
+<div class="pill--ativo">Todos</div>
+<div class="pill">Pendentes</div>
+<div class="pill">Em andamento</div>
+<div class="pill">Concluídos</div>
+<div class="pill">Cancelados</div>
+</div>
+<div style="display:flex;align-items:center;gap:14px">
+<div class="seletor-inline">Filtros<i class="ti ti-chevron-down" aria-hidden="true"></i></div>
+<div class="seletor-inline">Mais recentes<i class="ti ti-chevron-down" aria-hidden="true"></i></div>
+</div>
+</div>
+
+<div class="tabela">
+
+<div style="display:grid;grid-template-columns:80px 1.3fr 110px 100px 90px 90px 44px;padding:9px 14px;background:var(--sec-bg);font-size:11px;color:var(--sub);font-weight:500">
+<div>Pedido</div><div>Cliente</div><div>Data</div><div style="text-align:right">Total</div><div>Pagamento</div><div style="text-align:center">Status</div><div></div>
+</div>
+
+<div style="display:grid;grid-template-columns:80px 1.3fr 110px 100px 90px 90px 44px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
+<div style="color:var(--sub)">#10245</div>
+<div>João da Silva</div>
+<div style="color:var(--sub)">24/08 13:20</div>
+<div style="text-align:right;font-weight:500">R$ 850,00</div>
+<div style="color:var(--sub)">PIX</div>
+<div style="text-align:center"><span class="badge badge--ok"><span class="badge__dot"></span>Concluído</span></div>
+<div style="text-align:center"><i class="ti ti-chevron-right" style="font-size:14px;color:var(--sub)" aria-hidden="true"></i></div>
+</div>
+
+<div style="display:grid;grid-template-columns:80px 1.3fr 110px 100px 90px 90px 44px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
+<div style="color:var(--sub)">#10244</div>
+<div>Empresa ABC Ltda</div>
+<div style="color:var(--sub)">24/08 12:48</div>
+<div style="text-align:right;font-weight:500">R$ 2.430,00</div>
+<div style="color:var(--sub)">Cartão</div>
+<div style="text-align:center"><span class="badge badge--info"><span class="badge__dot"></span>Processando</span></div>
+<div style="text-align:center"><i class="ti ti-chevron-right" style="font-size:14px;color:var(--sub)" aria-hidden="true"></i></div>
+</div>
+
+<div style="display:grid;grid-template-columns:80px 1.3fr 110px 100px 90px 90px 44px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
+<div style="color:var(--sub)">#10243</div>
+<div>Maria Souza</div>
+<div style="color:var(--sub)">23/08 18:32</div>
+<div style="text-align:right;font-weight:500">R$ 320,00</div>
+<div style="color:var(--sub)">PIX</div>
+<div style="text-align:center"><span class="badge badge--off"><span class="badge__dot"></span>Pendente</span></div>
+<div style="text-align:center"><i class="ti ti-chevron-right" style="font-size:14px;color:var(--sub)" aria-hidden="true"></i></div>
+</div>
+
+<div style="display:grid;grid-template-columns:80px 1.3fr 110px 100px 90px 90px 44px;align-items:center;padding:10px 14px;font-size:12px;color:var(--ink)">
+<div style="color:var(--sub)">#10242</div>
+<div>Loja XYZ</div>
+<div style="color:var(--sub)">23/08 09:15</div>
+<div style="text-align:right;font-weight:500">R$ 1.250,00</div>
+<div style="color:var(--sub)">Boleto</div>
+<div style="text-align:center"><span class="badge badge--danger"><span class="badge__dot"></span>Cancelado</span></div>
+<div style="text-align:center"><i class="ti ti-chevron-right" style="font-size:14px;color:var(--sub)" aria-hidden="true"></i></div>
+</div>
+
+</div>
+
+<div class="paginacao">
+<span class="paginacao__info">Mostrando 4 de 512 pedidos</span>
+<div class="paginacao__botoes">
+<div class="paginacao__pagina"><i class="ti ti-chevron-left" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
+<div class="paginacao__pagina--ativa">1</div>
+<div class="paginacao__pagina">2</div>
+<div class="paginacao__pagina">3</div>
+<div class="paginacao__pagina"><i class="ti ti-chevron-right" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
