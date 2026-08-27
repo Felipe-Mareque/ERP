@@ -1,3 +1,4 @@
+
 // Formulário
 const formulario = document.getElementById("form-cadastro-produto");
 
@@ -43,11 +44,37 @@ function campoVazio(campo){
 function validarCampo (campo, erro){
     
     if (campoVazio(campo)){
-         erro.textContent = "Campo obrigatorio";
+        erro.textContent = "Campo obrigatorio";
+        erro.classList.add("mensagem-erro--visivel");
     }
     else {
         erro.textContent = "";
+        erro.classList.remove("mensagem-erro--visivel");
     }
+}
+
+function validarPreco(valor,erro){
+    const numero = Number(valor.value);
+
+    if (campoVazio(valor) || isNaN(numero) || numero<= 0){
+        erro.textContent = "Digite novamente";
+        erro.classList.add("mensagem-erro--visivel");
+    }
+    else {
+        erro.textContent = "";
+        erro.classList.remove("mensagem-erro--visivel");
+    }
+}
+
+function calcularMargem(custo, venda){
+    const custoTotal = Number(custo.value);
+    const vendaTotal = Number(venda.value);
+
+    if (custoTotal<=0){
+        return;
+    }
+
+    return ((vendaTotal - custoTotal)/custoTotal)*100;
 }
 
 
@@ -55,23 +82,25 @@ function validarCampo (campo, erro){
 formulario.addEventListener("submit",function(event){
     event.preventDefault();
 
-
     validarCampo(nomeProduto,erroNomeProduto);
     validarCampo(sku,erroSkuProduto);
     validarCampo(categoria,erroCategoriaProduto);
     validarCampo(precoVenda,erroPrecoVenda);
     validarCampo(estoqueInicial,erroEstoqueInicial);
 
-
-    const valor = Number(precoVenda.value);
-
-    if  (valor <=0) {
-    erroPrecoVenda.textContent = "Digite o preço de venda";
+    validarPreco(precoVenda,erroPrecoVenda);
 }
-    else if (isNaN(valor)){
-        erroPrecoVenda.textContent = "Digite números";
+)
+
+precoVenda.addEventListener("input",function(){
+
+    const margem = calcularMargem(precoCusto, precoVenda);
+
+    if (margem === undefined){
+        margemLucro.textContent = "-";
+        return;
     }
 
-}
+    margemLucro.textContent = margem.toFixed(2) + "%";
+})
 
-)
