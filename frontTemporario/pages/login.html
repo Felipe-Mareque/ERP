@@ -27,33 +27,43 @@
 <span class="form-label" style="font-size:13px">Insira suas credenciais para continuar.</span>
 </div>
 
+<form id="form-login" novalidate>
+
 <div class="form-secao" style="gap:14px">
 
 <div class="form-grupo">
-<label class="form-label" style="font-size:12px">Email corporativo</label>
-<div class="login-input">
+<label class="form-label" style="font-size:12px" for="input-email">Email corporativo</label>
+<div class="login-input" id="grupo-email">
 <i class="ti ti-mail" aria-hidden="true"></i>
-<input type="email" placeholder="nome@empresa.com">
+<input type="email" id="input-email" placeholder="nome@empresa.com">
 </div>
+<span class="mensagem-erro" id="erro-email"></span>
 </div>
 
 <div class="form-grupo">
-<label class="form-label" style="font-size:12px">Senha</label>
-<div class="login-input">
+<label class="form-label" style="font-size:12px" for="input-senha">Senha</label>
+<div class="login-input" id="grupo-senha">
 <i class="ti ti-lock" aria-hidden="true"></i>
-<input type="password" placeholder="••••••••••" style="flex:1">
-<i class="ti ti-eye" aria-hidden="true"></i>
+<input type="password" id="input-senha" placeholder="••••••••••" style="flex:1">
+<i class="ti ti-eye" id="botao-mostrar-senha" aria-hidden="true"></i>
 </div>
+<span class="mensagem-erro" id="erro-senha"></span>
 </div>
 
 <div style="display:flex;justify-content:space-between;align-items:center">
-<label class="radio-item--inativo"><span class="login-checkbox"></span>Lembrar de mim</label>
+<label class="radio-item--inativo" id="label-lembrar">
+<span class="login-checkbox" id="checkbox-lembrar"></span>Lembrar de mim
+</label>
 <span class="badge__link" style="font-size:12px;color:var(--moss);font-weight:500;cursor:pointer">Esqueci minha senha</span>
 </div>
 
-<button type="submit" class="btn btn-primario" style="justify-content:center;width:100%;padding:11px;border-radius:9px;font-size:13px;border:none;cursor:pointer;margin-top:4px">Entrar</button>
+<span class="mensagem-erro" id="erro-geral"></span>
+
+<button type="submit" id="botao-entrar" class="btn btn-primario" style="justify-content:center;width:100%;padding:11px;border-radius:9px;font-size:13px;border:none;cursor:pointer;margin-top:4px">Entrar</button>
 
 </div>
+
+</form>
 
 <div class="login-divisor">
 <div class="login-divisor__linha"></div>
@@ -79,5 +89,7 @@
 </div>
 
 </div>
+
+<script src="../js/login.js" defer></script>
 </body>
 </html>

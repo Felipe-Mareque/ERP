@@ -33,44 +33,51 @@
 </div>
 </div>
 
+<div id="mensagem-sucesso" class="mensagem-sucesso"></div>
+
+<form id="form-cadastro-produto" novalidate>
+
 <div class="card">
 <div class="card__titulo">Informações gerais</div>
 <div class="form-secao">
 
 <div class="form-grupo">
-<label class="form-label">Nome do produto *</label>
-<input type="text" placeholder="Ex: Notebook Dell Inspiron" class="form-input">
+<label class="form-label" for="nome-produto">Nome do produto *</label>
+<input type="text" id="nome-produto" placeholder="Ex: Notebook Dell Inspiron" class="form-input">
+<span class="mensagem-erro" id="erro-nome-produto"></span>
 </div>
 
 <div style="display:grid;grid-template-columns:180px 1fr;gap:10px">
 <div class="form-grupo">
-<label class="form-label">SKU/Código *</label>
-<input type="text" placeholder="NOTE-001" class="form-input">
+<label class="form-label" for="sku-produto">SKU/Código *</label>
+<input type="text" id="sku-produto" placeholder="NOTE-001" class="form-input">
+<span class="mensagem-erro" id="erro-sku-produto"></span>
 </div>
 <div class="form-grupo">
-<label class="form-label">Categoria *</label>
-<select class="form-input">
-<option>Selecionar categoria</option>
+<label class="form-label" for="categoria-produto">Categoria *</label>
+<select id="categoria-produto" class="form-input">
+<option value="">Selecionar categoria</option>
 <option>Eletrônicos</option>
 <option>Periféricos</option>
 </select>
+<span class="mensagem-erro" id="erro-categoria-produto"></span>
 </div>
 </div>
 
 <div style="display:grid;grid-template-columns:180px 1fr;gap:10px">
 <div class="form-grupo">
-<label class="form-label">Código de barras</label>
-<input type="text" placeholder="1234567890123" class="form-input">
+<label class="form-label" for="codigo-barras">Código de barras</label>
+<input type="text" id="codigo-barras" placeholder="1234567890123" class="form-input">
 </div>
 <div class="form-grupo">
-<label class="form-label">Marca</label>
-<input type="text" placeholder="Ex: Dell, HP" class="form-input">
+<label class="form-label" for="marca-produto">Marca</label>
+<input type="text" id="marca-produto" placeholder="Ex: Dell, HP" class="form-input">
 </div>
 </div>
 
 <div class="form-grupo">
-<label class="form-label">Descrição</label>
-<textarea placeholder="Descrição breve do produto..." class="form-input form-textarea"></textarea>
+<label class="form-label" for="descricao-produto">Descrição</label>
+<textarea id="descricao-produto" placeholder="Descrição breve do produto..." class="form-input form-textarea"></textarea>
 </div>
 
 </div>
@@ -83,25 +90,26 @@
 <div class="form-secao">
 
 <div class="form-grupo">
-<label class="form-label">Preço de custo</label>
+<label class="form-label" for="preco-custo">Preço de custo</label>
 <div class="form-input-icone">
 <span style="font-size:12px;color:var(--sub)">R$</span>
-<input type="text" placeholder="800,00">
+<input type="text" id="preco-custo" placeholder="800,00">
 </div>
 </div>
 
 <div class="form-grupo">
-<label class="form-label">Preço de venda *</label>
+<label class="form-label" for="preco-venda">Preço de venda *</label>
 <div class="form-input-icone">
 <span style="font-size:12px;color:var(--sub)">R$</span>
-<input type="text" placeholder="1.000,00">
+<input type="text" id="preco-venda" placeholder="1.000,00">
 </div>
+<span class="mensagem-erro" id="erro-preco-venda"></span>
 </div>
 
 <div class="form-grupo">
 <label class="form-label">Margem de lucro</label>
 <div style="display:flex;align-items:center;justify-content:space-between;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--sec-bg)">
-<span style="font-size:12px;color:var(--ink);font-weight:500">20%</span>
+<span style="font-size:12px;color:var(--ink);font-weight:500" id="margem-lucro">—</span>
 <span style="font-size:10px;color:var(--sub)">calculado</span>
 </div>
 </div>
@@ -114,16 +122,17 @@
 <div class="form-secao">
 
 <div class="form-grupo">
-<label class="form-label">Estoque inicial *</label>
+<label class="form-label" for="estoque-inicial">Estoque inicial *</label>
 <div class="form-input-icone">
-<input type="text" placeholder="25">
+<input type="text" id="estoque-inicial" placeholder="25">
 <span style="font-size:11px;color:var(--sub);font-weight:500">UN</span>
 </div>
+<span class="mensagem-erro" id="erro-estoque-inicial"></span>
 </div>
 
 <div class="form-grupo">
-<label class="form-label">Unidade de medida *</label>
-<select class="form-input">
+<label class="form-label" for="unidade-medida">Unidade de medida *</label>
+<select id="unidade-medida" class="form-input">
 <option>UN - Unidade</option>
 <option>KG - Quilograma</option>
 <option>L - Litro</option>
@@ -131,9 +140,9 @@
 </div>
 
 <div class="form-grupo">
-<label class="form-label">Estoque mínimo</label>
+<label class="form-label" for="estoque-minimo">Estoque mínimo</label>
 <div class="form-input-icone">
-<input type="text" placeholder="5">
+<input type="text" id="estoque-minimo" placeholder="5">
 <span style="font-size:11px;color:var(--sub);font-weight:500">UN</span>
 </div>
 </div>
@@ -154,15 +163,18 @@
 </div>
 
 <div class="form-acoes">
-<div class="btn btn-secundario--sutil">Cancelar</div>
+<button type="button" id="botao-cancelar" class="btn btn-secundario--sutil">Cancelar</button>
 <div class="form-acoes__direita">
-<div class="btn btn-secundario">Salvar e novo</div>
-<div class="btn btn-primario">Salvar</div>
+<button type="button" id="botao-salvar-novo" class="btn btn-secundario">Salvar e novo</button>
+<button type="submit" id="botao-salvar" class="btn btn-primario">Salvar</button>
 </div>
 </div>
+
+</form>
 
 </div>
 </div>
 
+<script src="../js/cadastroProduto.js" defer></script>
 </body>
 </html>

@@ -1057,3 +1057,67 @@
   font-size: 11px;
   color: var(--ink);
 }
+
+/* ============================================
+   Estados de formulário (erro / sucesso)
+   Usados no Login e no Cadastro de Produto
+   ============================================ */
+
+/* ---------- Mensagens de erro ---------- */
+.mensagem-erro {
+  display: none;
+  font-size: 11px;
+  color: var(--danger);
+  margin-top: 4px;
+}
+
+.mensagem-erro--visivel {
+  display: block;
+}
+
+/* ---------- Campo com erro (borda vermelha) ---------- */
+.login-input--erro {
+  border-color: var(--danger);
+}
+
+.form-input--erro {
+  border-color: var(--danger) !important;
+}
+
+/* ---------- Checkbox "Lembrar de mim" marcado (Login) ---------- */
+.login-checkbox--marcado {
+  background: var(--moss);
+  border-color: var(--moss);
+  position: relative;
+}
+
+.login-checkbox--marcado::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+/* ---------- Ícone clicável (olho de mostrar senha) ---------- */
+#botao-mostrar-senha {
+  cursor: pointer;
+}
+
+/* ---------- Mensagem de sucesso (cadastro fake, sem backend) ---------- */
+.mensagem-sucesso {
+  display: none;
+  background: var(--ok-bg);
+  color: var(--ok);
+  font-size: 12px;
+  padding: 9px 12px;
+  border-radius: 8px;
+}
+
+.mensagem-sucesso--visivel {
+  display: block;
+}
