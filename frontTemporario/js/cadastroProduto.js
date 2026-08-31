@@ -46,11 +46,13 @@ function validarCampo (campo, erro){
     if (campoVazio(campo)){
         erro.textContent = "Campo obrigatorio";
         erro.classList.add("mensagem-erro--visivel");
+        return false;
     }
     else {
         erro.textContent = "";
         erro.classList.remove("mensagem-erro--visivel");
     }
+    return true;
 }
 
 function validarPreco(valor,erro){
@@ -59,10 +61,12 @@ function validarPreco(valor,erro){
     if (campoVazio(valor) || isNaN(numero) || numero<= 0){
         erro.textContent = "Digite novamente";
         erro.classList.add("mensagem-erro--visivel");
+        return false;
     }
     else {
         erro.textContent = "";
         erro.classList.remove("mensagem-erro--visivel");
+        return true;
     }
 }
 
@@ -77,18 +81,54 @@ function calcularMargem(custo, venda){
     return ((vendaTotal - custoTotal)/custoTotal)*100;
 }
 
+function criarProduto(){
+    const produto = {
+    nome: nomeProduto.value,
+    sku: sku.value,
+    categoria: categoria.value,
+    codigoBarras: codigoBarras.value,
+    marca: marca.value,
+    descricao: descricao.value,
+    precoCusto: Number(precoCusto.value),
+    precoVenda: Number(precoVenda.value),
+    estoqueInicial: Number(estoqueInicial.value),
+    unidadeMedida: unidadeMedida.value,
+    estoqueMinimo: Number(estoqueMinimo.value)
+};
+    return produto;
+};
 
+function validarFormulario(){
+    const nomeValido = validarCampo(nomeProduto, erroNomeProduto);
+    const skuValido = validarCampo(sku, erroSkuProduto);
+    const categoriaValida = validarCampo(categoria, erroCategoriaProduto);
+    const precoValido = validarPreco(precoVenda, erroPrecoVenda);
+    const estoqueValido = validarCampo(estoqueInicial, erroEstoqueInicial);
+
+    return nomeValido &&
+           skuValido &&
+           categoriaValida &&
+           precoValido &&
+           estoqueValido;
+}
 // ----------------------------------------------------------------------------------
+
+    const produtos = [];
+
 formulario.addEventListener("submit",function(event){
     event.preventDefault();
 
-    validarCampo(nomeProduto,erroNomeProduto);
-    validarCampo(sku,erroSkuProduto);
-    validarCampo(categoria,erroCategoriaProduto);
-    validarCampo(precoVenda,erroPrecoVenda);
-    validarCampo(estoqueInicial,erroEstoqueInicial);
+     const validado = validarFormulario();
+     
+     if (validado === true){
+          const produto = criarProduto();
+          produtos.push(produto);
+          console.log(produto);
+     }
+   
 
-    validarPreco(precoVenda,erroPrecoVenda);
+    
+    console.log(produtos);
 }
 )
 
@@ -103,4 +143,6 @@ precoVenda.addEventListener("input",function(){
 
     margemLucro.textContent = margem.toFixed(2) + "%";
 })
+
+
 

@@ -1,103 +1,460 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Produtos — Verdant ERP</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
-<link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="../css/layout.css">
-<link rel="stylesheet" href="../css/componentes.css">
-<style>
-  body { margin: 0; padding: 20px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos — Verdant ERP</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
+
 <div class="tela" style="min-height:540px">
 
-<div class="sidebar">
-<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
-<div class="sidebar-item"><i class="ti ti-home" aria-hidden="true"></i>Painel</div>
-<div class="sidebar-item sidebar-item--active"><i class="ti ti-package" aria-hidden="true"></i>Produtos</div>
-<div class="sidebar-subitens"><div class="sidebar-subitem--ativo">Listagem</div><div class="sidebar-subitem">Cadastro</div></div>
-<div class="sidebar-item"><i class="ti ti-users" aria-hidden="true"></i>Clientes</div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="ti ti-leaf" aria-hidden="true"></i>
+            Verdant erp
+        </div>
+
+        <div class="sidebar-item">
+            <i class="ti ti-home" aria-hidden="true"></i>
+            Painel
+        </div>
+
+        <div class="sidebar-item sidebar-item--active">
+            <i class="ti ti-package" aria-hidden="true"></i>
+            Produtos
+        </div>
+
+        <div class="sidebar-subitens">
+            <div class="sidebar-subitem--ativo">
+                Listagem
+            </div>
+
+            <div class="sidebar-subitem">
+                Cadastro
+            </div>
+        </div>
+
+        <div class="sidebar-item">
+            <i class="ti ti-users" aria-hidden="true"></i>
+            Clientes
+        </div>
+
+    </div>
+
+
+    <!-- Conteúdo -->
+    <div class="conteudo">
+
+        <!-- Cabeçalho -->
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+
+            <div class="pagina-titulo">
+
+                <span class="pagina-titulo__titulo">
+                    Produtos
+                </span>
+
+                <span class="pagina-titulo__sub">
+                    128 produtos cadastrados
+                </span>
+
+            </div>
+
+            <a href="cadastro_produto.html" class="btn btn-primario">
+                <i
+                    class="ti ti-plus"
+                    style="font-size:13px"
+                    aria-hidden="true"
+                ></i>
+
+                Novo produto
+            </a>
+
+        </div>
+
+
+        <!-- Busca e filtros -->
+        <div style="display:flex;gap:10px;align-items:center">
+
+            <div class="busca" style="flex:1">
+
+                <i
+                    class="ti ti-search"
+                    aria-hidden="true"
+                ></i>
+
+                <input
+                    type="text"
+                    id="campo-busca-produto"
+                    placeholder="Buscar por nome ou código..."
+                >
+
+            </div>
+
+            <div class="seletor-caixa">
+                Categoria
+
+                <i
+                    class="ti ti-chevron-down"
+                    aria-hidden="true"
+                ></i>
+            </div>
+
+            <div class="seletor-caixa">
+                Status
+
+                <i
+                    class="ti ti-chevron-down"
+                    aria-hidden="true"
+                ></i>
+            </div>
+
+        </div>
+
+
+        <!-- Tabela -->
+        <div class="tabela">
+
+            <!-- Cabeçalho -->
+            <div
+                style="
+                    display:grid;
+                    grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;
+                    padding:9px 14px;
+                    background:var(--sec-bg);
+                    font-size:11px;
+                    color:var(--sub);
+                    font-weight:500
+                "
+            >
+
+                <div>Código</div>
+                <div>Nome</div>
+                <div>Categoria</div>
+                <div style="text-align:right">Preço</div>
+                <div style="text-align:center">Estoque</div>
+                <div style="text-align:center">Status</div>
+                <div style="text-align:center">Ações</div>
+
+            </div>
+
+
+            <!-- Produto 1 -->
+            <div
+                class="linha-produto"
+                style="
+                    display:grid;
+                    grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;
+                    align-items:center;
+                    padding:10px 14px;
+                    border-bottom:0.5px solid var(--line);
+                    font-size:12px;
+                    color:var(--ink)
+                "
+            >
+
+                <div class="produto-codigo" style="color:var(--sub)">
+                    PR-001
+                </div>
+
+                <div class="produto-nome">
+                    Cabo USB-C 1m
+                </div>
+
+                <div class="produto-categoria" style="color:var(--sub)">
+                    Acessórios
+                </div>
+
+                <div style="text-align:right">
+                    R$ 24,90
+                </div>
+
+                <div style="text-align:center">
+                    142
+                </div>
+
+                <div style="text-align:center">
+                    <span class="badge badge--ok">
+                        Ativo
+                    </span>
+                </div>
+
+                <div class="tabela__acoes">
+                    <i class="ti ti-eye" aria-hidden="true"></i>
+                    <i class="ti ti-edit" aria-hidden="true"></i>
+                    <i class="ti ti-trash icone-excluir" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+
+            <!-- Produto 2 -->
+            <div
+                class="linha-produto"
+                style="
+                    display:grid;
+                    grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;
+                    align-items:center;
+                    padding:10px 14px;
+                    border-bottom:0.5px solid var(--line);
+                    font-size:12px;
+                    color:var(--ink)
+                "
+            >
+
+                <div class="produto-codigo" style="color:var(--sub)">
+                    PR-002
+                </div>
+
+                <div class="produto-nome">
+                    Mouse sem fio
+                </div>
+
+                <div class="produto-categoria" style="color:var(--sub)">
+                    Periféricos
+                </div>
+
+                <div style="text-align:right">
+                    R$ 89,00
+                </div>
+
+                <div style="text-align:center">
+                    37
+                </div>
+
+                <div style="text-align:center">
+                    <span class="badge badge--ok">
+                        Ativo
+                    </span>
+                </div>
+
+                <div class="tabela__acoes">
+                    <i class="ti ti-eye" aria-hidden="true"></i>
+                    <i class="ti ti-edit" aria-hidden="true"></i>
+                    <i class="ti ti-trash icone-excluir" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+
+            <!-- Produto 3 -->
+            <div
+                class="linha-produto"
+                style="
+                    display:grid;
+                    grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;
+                    align-items:center;
+                    padding:10px 14px;
+                    border-bottom:0.5px solid var(--line);
+                    font-size:12px;
+                    color:var(--ink)
+                "
+            >
+
+                <div class="produto-codigo" style="color:var(--sub)">
+                    PR-003
+                </div>
+
+                <div class="produto-nome">
+                    Teclado mecânico
+                </div>
+
+                <div class="produto-categoria" style="color:var(--sub)">
+                    Periféricos
+                </div>
+
+                <div style="text-align:right">
+                    R$ 349,00
+                </div>
+
+                <div style="text-align:center;color:var(--danger)">
+                    0
+                </div>
+
+                <div style="text-align:center">
+                    <span class="badge badge--ok">
+                        Ativo
+                    </span>
+                </div>
+
+                <div class="tabela__acoes">
+                    <i class="ti ti-eye" aria-hidden="true"></i>
+                    <i class="ti ti-edit" aria-hidden="true"></i>
+                    <i class="ti ti-trash icone-excluir" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+
+            <!-- Produto 4 -->
+            <div
+                class="linha-produto"
+                style="
+                    display:grid;
+                    grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;
+                    align-items:center;
+                    padding:10px 14px;
+                    border-bottom:0.5px solid var(--line);
+                    font-size:12px;
+                    color:var(--ink)
+                "
+            >
+
+                <div class="produto-codigo" style="color:var(--sub)">
+                    PR-004
+                </div>
+
+                <div class="produto-nome">
+                    Monitor 24"
+                </div>
+
+                <div class="produto-categoria" style="color:var(--sub)">
+                    Eletrônicos
+                </div>
+
+                <div style="text-align:right">
+                    R$ 899,00
+                </div>
+
+                <div style="text-align:center">
+                    18
+                </div>
+
+                <div style="text-align:center">
+                    <span class="badge badge--off">
+                        Inativo
+                    </span>
+                </div>
+
+                <div class="tabela__acoes">
+                    <i class="ti ti-eye" aria-hidden="true"></i>
+                    <i class="ti ti-edit" aria-hidden="true"></i>
+                    <i class="ti ti-trash icone-excluir" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+
+            <!-- Produto 5 -->
+            <div
+                class="linha-produto"
+                style="
+                    display:grid;
+                    grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;
+                    align-items:center;
+                    padding:10px 14px;
+                    font-size:12px;
+                    color:var(--ink)
+                "
+            >
+
+                <div class="produto-codigo" style="color:var(--sub)">
+                    PR-005
+                </div>
+
+                <div class="produto-nome">
+                    Cadeira de escritório
+                </div>
+
+                <div class="produto-categoria" style="color:var(--sub)">
+                    Mobiliário
+                </div>
+
+                <div style="text-align:right">
+                    R$ 620,00
+                </div>
+
+                <div style="text-align:center">
+                    9
+                </div>
+
+                <div style="text-align:center">
+                    <span class="badge badge--ok">
+                        Ativo
+                    </span>
+                </div>
+
+                <div class="tabela__acoes">
+                    <i class="ti ti-eye" aria-hidden="true"></i>
+                    <i class="ti ti-edit" aria-hidden="true"></i>
+                    <i class="ti ti-trash icone-excluir" aria-hidden="true"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Paginação -->
+        <div class="paginacao">
+
+            <span class="paginacao__info">
+                Mostrando 5 de 128 produtos
+            </span>
+
+            <div class="paginacao__botoes">
+
+                <div class="paginacao__pagina">
+                    <i
+                        class="ti ti-chevron-left"
+                        style="font-size:12px;color:var(--sub)"
+                        aria-hidden="true"
+                    ></i>
+                </div>
+
+                <div class="paginacao__pagina--ativa">
+                    1
+                </div>
+
+                <div class="paginacao__pagina">
+                    2
+                </div>
+
+                <div class="paginacao__pagina">
+                    3
+                </div>
+
+                <div class="paginacao__pagina">
+                    <i
+                        class="ti ti-chevron-right"
+                        style="font-size:12px;color:var(--sub)"
+                        aria-hidden="true"
+                    ></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<div class="conteudo">
+<script src="../js/pesquisaProduto.js"></script>
 
-<div style="display:flex;justify-content:space-between;align-items:flex-start">
-<div class="pagina-titulo">
-<span class="pagina-titulo__titulo">Produtos</span>
-<span class="pagina-titulo__sub">128 produtos cadastrados</span>
-</div>
-<div class="btn btn-primario"><i class="ti ti-plus" style="font-size:13px" aria-hidden="true"></i>Novo produto</div>
-</div>
-
-<div style="display:flex;gap:10px;align-items:center">
-<div class="busca" style="flex:1">
-<i class="ti ti-search" aria-hidden="true"></i>
-<span style="font-size:12px;color:var(--sub)">Buscar por nome ou código...</span>
-</div>
-<div class="seletor-caixa">Categoria<i class="ti ti-chevron-down" aria-hidden="true"></i></div>
-<div class="seletor-caixa">Status<i class="ti ti-chevron-down" aria-hidden="true"></i></div>
-</div>
-
-<div class="tabela">
-
-<div style="display:grid;grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;padding:9px 14px;background:var(--sec-bg);font-size:11px;color:var(--sub);font-weight:500">
-<div>Código</div><div>Nome</div><div>Categoria</div><div class="center" style="text-align:right">Preço</div><div style="text-align:center">Estoque</div><div style="text-align:center">Status</div><div style="text-align:center">Ações</div>
-</div>
-
-<div style="display:grid;grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
-<div style="color:var(--sub)">PR-001</div><div>Cabo USB-C 1m</div><div style="color:var(--sub)">Acessórios</div><div style="text-align:right">R$ 24,90</div>
-<div style="text-align:center">142</div>
-<div style="text-align:center"><span class="badge badge--ok">Ativo</span></div>
-<div class="tabela__acoes"><i class="ti ti-eye" aria-hidden="true"></i><i class="ti ti-edit" aria-hidden="true"></i><i class="ti ti-trash icone-excluir" aria-hidden="true"></i></div>
-</div>
-
-<div style="display:grid;grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
-<div style="color:var(--sub)">PR-002</div><div>Mouse sem fio</div><div style="color:var(--sub)">Periféricos</div><div style="text-align:right">R$ 89,00</div>
-<div style="text-align:center">37</div>
-<div style="text-align:center"><span class="badge badge--ok">Ativo</span></div>
-<div class="tabela__acoes"><i class="ti ti-eye" aria-hidden="true"></i><i class="ti ti-edit" aria-hidden="true"></i><i class="ti ti-trash icone-excluir" aria-hidden="true"></i></div>
-</div>
-
-<div style="display:grid;grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
-<div style="color:var(--sub)">PR-003</div><div>Teclado mecânico</div><div style="color:var(--sub)">Periféricos</div><div style="text-align:right">R$ 349,00</div>
-<div style="text-align:center;color:var(--danger)">0</div>
-<div style="text-align:center"><span class="badge badge--ok">Ativo</span></div>
-<div class="tabela__acoes"><i class="ti ti-eye" aria-hidden="true"></i><i class="ti ti-edit" aria-hidden="true"></i><i class="ti ti-trash icone-excluir" aria-hidden="true"></i></div>
-</div>
-
-<div style="display:grid;grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;align-items:center;padding:10px 14px;border-bottom:0.5px solid var(--line);font-size:12px;color:var(--ink)">
-<div style="color:var(--sub)">PR-004</div><div>Monitor 24"</div><div style="color:var(--sub)">Eletrônicos</div><div style="text-align:right">R$ 899,00</div>
-<div style="text-align:center">18</div>
-<div style="text-align:center"><span class="badge badge--off">Inativo</span></div>
-<div class="tabela__acoes"><i class="ti ti-eye" aria-hidden="true"></i><i class="ti ti-edit" aria-hidden="true"></i><i class="ti ti-trash icone-excluir" aria-hidden="true"></i></div>
-</div>
-
-<div style="display:grid;grid-template-columns:70px 1.6fr 1fr 90px 90px 90px 90px;align-items:center;padding:10px 14px;font-size:12px;color:var(--ink)">
-<div style="color:var(--sub)">PR-005</div><div>Cadeira de escritório</div><div style="color:var(--sub)">Mobiliário</div><div style="text-align:right">R$ 620,00</div>
-<div style="text-align:center">9</div>
-<div style="text-align:center"><span class="badge badge--ok">Ativo</span></div>
-<div class="tabela__acoes"><i class="ti ti-eye" aria-hidden="true"></i><i class="ti ti-edit" aria-hidden="true"></i><i class="ti ti-trash icone-excluir" aria-hidden="true"></i></div>
-</div>
-
-</div>
-
-<div class="paginacao">
-<span class="paginacao__info">Mostrando 5 de 128 produtos</span>
-<div class="paginacao__botoes">
-<div class="paginacao__pagina"><i class="ti ti-chevron-left" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
-<div class="paginacao__pagina--ativa">1</div>
-<div class="paginacao__pagina">2</div>
-<div class="paginacao__pagina">3</div>
-<div class="paginacao__pagina"><i class="ti ti-chevron-right" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
-</div>
-</div>
-
-</div>
-
-</div>
 </body>
 </html>
+```
