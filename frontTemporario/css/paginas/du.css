@@ -1,0 +1,85 @@
+/* du.css — estilos específicos da página "Detalhes do Usuário" */
+
+.du-1 {
+  min-height: 600px;
+}
+
+.du-2 {
+  font-size: 14px;
+}
+
+.du-3 {
+  font-size: 13px;
+}
+
+.du-4 {
+  width: 56px;
+  height: 56px;
+  font-size: 18px;
+}
+
+.du-5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.du-6 {
+  flex: 1;
+  min-width: 0;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  overflow-y: auto;
+}
+
+.du-7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.du-8 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--moss);
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.du-9 {
+  flex: 1;
+}
+
+.du-10 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.du-11 {
+  font-size: 12px;
+  color: var(--sub);
+  margin-top: 2px;
+}
+
+.du-12 {
+  text-align: right;
+}
+
+.du-13 {
+  font-size: 10px;
+  color: var(--sub);
+  margin-top: 5px;
+}
+
+.du-14 {
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.6;
+}

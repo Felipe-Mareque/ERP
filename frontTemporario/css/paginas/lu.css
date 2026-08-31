@@ -1,0 +1,114 @@
+/* lu.css — estilos específicos da página "Usuários" */
+
+.lu-1 {
+  min-height: 600px;
+}
+
+.lu-2 {
+  font-size: 14px;
+}
+
+.lu-3 {
+  font-size: 13px;
+}
+
+.lu-4 {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.lu-5 {
+  font-size: 14px;
+  color: var(--danger);
+}
+
+.lu-6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lu-7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lu-8 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.lu-9 {
+  display: flex;
+  gap: 6px;
+}
+
+.lu-10 {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  overflow: visible;
+  position: relative;
+}
+
+.lu-11 {
+  display: grid;
+  grid-template-columns: 44px 1.6fr 1fr 110px 90px 44px;
+  padding: 9px 14px;
+  background: var(--sec-bg);
+  font-size: 11px;
+  color: var(--sub);
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+}
+
+.lu-12 {
+  text-align: center;
+}
+
+.lu-13 {
+  display: grid;
+  grid-template-columns: 44px 1.6fr 1fr 110px 90px 44px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 0.5px solid var(--line);
+  font-size: 12px;
+  color: var(--ink);
+  position: relative;
+}
+
+.lu-14 {
+  color: var(--sub);
+  font-size: 11px;
+}
+
+.lu-15 {
+  display: grid;
+  grid-template-columns: 44px 1.6fr 1fr 110px 90px 44px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 0.5px solid var(--line);
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.lu-16 {
+  display: grid;
+  grid-template-columns: 44px 1.6fr 1fr 110px 90px 44px;
+  align-items: center;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.lu-17 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lu-18 {
+  font-size: 11px;
+  color: var(--sub);
+}

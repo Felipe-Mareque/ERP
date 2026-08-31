@@ -1119,3 +1119,202 @@
 .mensagem-sucesso--visivel {
   display: block;
 }
+
+
+
+/* ============================================
+   Módulo de Usuários/Permissões (agosto 2026)
+   ============================================ */
+
+/* ---------- Menu de ações em dropdown (contexto) ---------- */
+.dropdown-menu {
+  position: absolute;
+  top: 36px;
+  right: 14px;
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(20,49,31,0.12);
+  min-width: 180px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.dropdown-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  font-size: 12px;
+  color: var(--ink);
+  border-bottom: 0.5px solid var(--line);
+}
+
+.dropdown-menu__item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu__item i {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.dropdown-menu__item--perigo {
+  color: var(--danger);
+}
+
+.dropdown-menu__item--perigo i {
+  color: var(--danger);
+}
+
+/* ---------- Lista de perfis (sidebar da tela de Perfis) ---------- */
+.lista-perfis {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.perfil-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.perfil-item--ativo {
+  background: var(--moss);
+  color: #fff;
+}
+
+.perfil-item__nome {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.perfil-item__contador {
+  font-size: 10px;
+  color: var(--sub);
+}
+
+.perfil-item--ativo .perfil-item__contador {
+  color: #c3d4c4;
+}
+
+/* ---------- Estado vazio (ex: nenhum funcionário no perfil) ---------- */
+.estado-vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 24px 0;
+  background: var(--sec-bg);
+  border-radius: 8px;
+}
+
+.estado-vazio i {
+  font-size: 20px;
+  color: var(--sub);
+}
+
+.estado-vazio span {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+/* ---------- Nome + e-mail empilhados (listagens de usuário) ---------- */
+.usuario-nome-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.usuario-nome-email__email {
+  font-size: 10px;
+  color: var(--sub);
+}
+
+/* ---------- Par label/valor (telas de detalhe/visualização) ---------- */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 20px;
+}
+
+.info-label {
+  font-size: 11px;
+  color: var(--sub);
+  margin-bottom: 2px;
+}
+
+.info-valor {
+  font-size: 12px;
+  color: var(--ink);
+}
+
+/* ---------- Cabeçalho com foto de perfil (detalhe do usuário) ---------- */
+.cabecalho-perfil-usuario {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ---------- Badge "perfil do sistema" (não editável) ---------- */
+.badge--sistema {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--sec-bg);
+  color: var(--sub);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+/* ---------- Link de ação inline (texto clicável, não botão) ---------- */
+.link-acao {
+  font-size: 11px;
+  color: var(--moss);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ---------- Bloco de senha (cadastro de usuário) ---------- */
+.bloco-senha {
+  background: var(--sec-bg);
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bloco-senha__titulo {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.bloco-senha__sub {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+/* ---------- Bloco de foto de perfil (cadastro de usuário) ---------- */
+.bloco-foto {
+  background: #fff;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}

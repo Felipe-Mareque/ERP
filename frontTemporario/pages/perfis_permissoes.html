@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfis e Permissões — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="../css/paginas/pp.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela pp-1">
+
+<div class="sidebar">
+<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
+<div class="sidebar-item"><i class="ti ti-home pp-2" aria-hidden="true"></i>Painel</div>
+<div class="sidebar-item"><i class="ti ti-package pp-2" aria-hidden="true"></i>Produtos</div>
+<div class="sidebar-item"><i class="ti ti-users pp-2" aria-hidden="true"></i>Clientes</div>
+<div class="sidebar-spacer"></div>
+<div><div class="sidebar-item--expandable sidebar-item--active"><span class="pp-10"><i class="ti ti-settings pp-2" aria-hidden="true"></i>Configurações</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens--recuo2"><div class="sidebar-subitem">Usuários</div><div class="sidebar-subitem--ativo">Perfis e permissões</div><div class="sidebar-subitem">Menu do sistema</div></div></div>
+</div>
+
+<div class="pp-11">
+
+<div class="pp-12">
+
+<div class="pp-13">
+<span class="pp-14">Perfis</span>
+<div class="btn btn-primario"><i class="ti ti-plus pp-3" aria-hidden="true"></i>Novo perfil</div>
+</div>
+
+<div class="pp-15">
+
+<div class="pp-16">
+<span class="pp-17"><i class="ti ti-shield-lock pp-4" aria-hidden="true"></i>Administrador</span>
+<i class="ti ti-lock pp-5" aria-hidden="true"></i>
+</div>
+
+<div class="pp-16">
+<span>Gerente</span>
+<span class="pp-18">3</span>
+</div>
+
+<div class="pp-16">
+<span>Vendedor</span>
+<span class="pp-18">8</span>
+</div>
+
+<div class="pp-16">
+<span>Estoquista</span>
+<span class="pp-18">2</span>
+</div>
+
+<div class="pp-19">
+<span>Motorista</span>
+<span class="pp-20">0</span>
+</div>
+
+</div>
+
+<div class="pp-21">
+<i class="ti ti-lock pp-6" aria-hidden="true"></i>Perfis com cadeado não podem ser excluídos
+</div>
+
+</div>
+
+<div class="pp-22">
+
+<div class="card">
+<div class="card__titulo">Informações do perfil</div>
+<div class="form-secao">
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">Nome do perfil *</label>
+<input type="text" value="Motorista" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Onde atua</label>
+<select class="form-input">
+<option>Comercial</option>
+<option>Estoque</option>
+<option selected>Logística</option>
+<option>Financeiro</option>
+<option>Administrativo</option>
+</select>
+</div>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Descrição</label>
+<textarea class="form-input form-textarea">Responsável pela entrega e coleta de mercadorias, sem acesso a dados financeiros ou de clientes.</textarea>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="pp-23">
+<div class="pp-24">Funcionários com este perfil</div>
+<span class="link-acao">+ Atribuir funcionário</span>
+</div>
+
+<div class="estado-vazio">
+<i class="ti ti-users pp-7" aria-hidden="true"></i>
+<span class="pp-25">Nenhum funcionário com este perfil ainda</span>
+</div>
+
+</div>
+
+<div class="tabela">
+
+<div class="pp-26">
+<span class="pp-24">Permissões</span>
+</div>
+
+<div class="pp-27">
+<div>Módulo</div><div class="pp-28">Ver</div><div class="pp-28">Criar</div><div class="pp-28">Editar</div><div class="pp-28">Excluir</div>
+</div>
+
+<div class="pp-29">
+<div>Produtos</div>
+<div class="pp-28"><i class="ti ti-check pp-8" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+</div>
+
+<div class="pp-29">
+<div>Clientes</div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+</div>
+
+<div class="pp-29">
+<div>Pedidos de venda</div>
+<div class="pp-28"><i class="ti ti-check pp-8" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+</div>
+
+<div class="pp-29">
+<div>Financeiro</div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+</div>
+
+<div class="pp-30">
+<div>Usuários e permissões</div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+<div class="pp-28"><i class="ti ti-x pp-9" aria-hidden="true"></i></div>
+</div>
+
+</div>
+
+<div class="pp-31">
+<div class="btn btn-perigo">Excluir perfil</div>
+<div class="btn btn-primario">Salvar alterações</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

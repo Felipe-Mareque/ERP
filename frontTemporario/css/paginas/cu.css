@@ -1,0 +1,130 @@
+/* cu.css — estilos específicos da página "Cadastro de Usuário" */
+
+.cu-1 {
+  min-height: 640px;
+}
+
+.cu-2 {
+  font-size: 14px;
+}
+
+.cu-3 {
+  width: 56px;
+  height: 56px;
+  font-size: 18px;
+}
+
+.cu-4 {
+  font-size: 16px;
+  color: var(--moss);
+}
+
+.cu-5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cu-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cu-7 {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.cu-8 {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.cu-9 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.cu-10 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cu-11 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.cu-12 {
+  font-size: 11px;
+  color: var(--moss);
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cu-13 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 160px;
+}
+
+.cu-14 {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 10px;
+}
+
+.cu-15 {
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: 10px;
+}
+
+.cu-16 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 200px;
+}
+
+.cu-17 {
+  font-size: 10px;
+  color: var(--sub);
+}
+
+.cu-18 {
+  color: var(--moss);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cu-19 {
+  flex: 1;
+}
+
+.cu-20 {
+  border: 0.5px solid var(--line);
+  border-radius: 7px;
+  padding: 6px 12px;
+  font-size: 11px;
+  color: var(--ink);
+  background: #fff;
+}
+
+.cu-21 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.cu-22 {
+  display: flex;
+  gap: 8px;
+}

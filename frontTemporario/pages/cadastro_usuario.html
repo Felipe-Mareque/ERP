@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Usuário — Verdant ERP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/componentes.css">
+<link rel="stylesheet" href="../css/paginas/cu.css">
+<style>
+  body { margin: 0; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="tela cu-1">
+
+<div class="sidebar">
+<div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
+<div class="sidebar-item"><i class="ti ti-home cu-2" aria-hidden="true"></i>Painel</div>
+<div class="sidebar-item"><i class="ti ti-package cu-2" aria-hidden="true"></i>Produtos</div>
+<div class="sidebar-item"><i class="ti ti-users cu-2" aria-hidden="true"></i>Clientes</div>
+<div class="sidebar-spacer"></div>
+<div><div class="sidebar-item--expandable sidebar-item--active"><span class="cu-5"><i class="ti ti-settings cu-2" aria-hidden="true"></i>Configurações</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens--recuo2"><div class="sidebar-subitem--ativo">Usuários</div><div class="sidebar-subitem">Perfis e permissões</div><div class="sidebar-subitem">Menu do sistema</div></div></div>
+</div>
+
+<div class="conteudo conteudo--scroll conteudo--estreito">
+
+<div class="cu-6">
+<span class="cu-7">Configurações / Usuários / Editar</span>
+<div class="cu-5">
+<span class="cu-8">Carla Souza</span>
+<span class="badge badge--ok"><span class="badge__dot"></span>Ativo</span>
+</div>
+<span class="cu-9">Usuário desde 03/02/2024</span>
+</div>
+
+<div class="card">
+<div class="cu-10">
+<div class="avatar--md cu-3">CS</div>
+<div class="cu-6">
+<span class="cu-11">Foto de perfil</span>
+<span class="cu-7">PNG ou JPG • até 2 MB</span>
+<span class="cu-12">Alterar foto</span>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Dados pessoais</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Nome completo *</label>
+<input type="text" value="Carla Souza" class="form-input">
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">CPF *</label>
+<input type="text" value="123.456.789-00" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Data de nascimento</label>
+<input type="text" value="14/06/1994" class="form-input">
+</div>
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">E-mail *</label>
+<input type="text" value="carla@verdanterp.com" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Telefone</label>
+<input type="text" value="(53) 99988-2211" class="form-input">
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Endereço</div>
+<div class="form-secao">
+
+<div class="cu-13">
+<label class="form-label">CEP</label>
+<input type="text" value="96015-560" class="form-input">
+</div>
+
+<div class="cu-14">
+<div class="form-grupo">
+<label class="form-label">Rua</label>
+<input type="text" value="Rua Gonçalves Chaves" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Número</label>
+<input type="text" value="1290" class="form-input">
+</div>
+</div>
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">Bairro</label>
+<input type="text" value="Centro" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Complemento</label>
+<input type="text" placeholder="Apto, sala, bloco..." class="form-input">
+</div>
+</div>
+
+<div class="cu-15">
+<div class="form-grupo">
+<label class="form-label">Cidade</label>
+<input type="text" value="Pelotas" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Estado</label>
+<select class="form-input">
+<option selected>RS</option>
+<option>SC</option>
+<option>SP</option>
+</select>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Informações profissionais</div>
+<div class="form-secao">
+
+<div class="grid-2">
+<div class="form-grupo">
+<label class="form-label">Cargo</label>
+<input type="text" value="Analista de Vendas Pleno" class="form-input">
+</div>
+<div class="form-grupo">
+<label class="form-label">Departamento</label>
+<select class="form-input">
+<option selected>Comercial</option>
+<option>Estoque</option>
+<option>Financeiro</option>
+<option>Administrativo</option>
+</select>
+</div>
+</div>
+
+<div class="cu-16">
+<label class="form-label">Data de admissão</label>
+<input type="text" value="03/02/2024" class="form-input">
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="card__titulo">Acesso ao sistema</div>
+<div class="form-secao">
+
+<div class="form-grupo">
+<label class="form-label">Perfil *</label>
+<select class="form-input">
+<option>Administrador</option>
+<option selected>Vendedor</option>
+<option>Estoquista</option>
+<option>Gerente</option>
+</select>
+<span class="cu-17">Define o que este usuário pode ver e fazer no sistema. <span class="cu-18">Gerenciar perfis</span></span>
+</div>
+
+<div class="form-grupo">
+<label class="form-label">Status</label>
+<select class="form-input">
+<option selected>Ativo</option>
+<option>Inativo</option>
+<option>Bloqueado</option>
+</select>
+</div>
+
+</div>
+</div>
+
+<div class="bloco-senha">
+<i class="ti ti-key cu-4" aria-hidden="true"></i>
+<div class="cu-19">
+<div class="cu-11">Senha</div>
+<div class="cu-7">Última alteração há 3 meses</div>
+</div>
+<div class="cu-20">Redefinir senha</div>
+</div>
+
+<div class="cu-21">
+<div class="btn btn-perigo">Excluir usuário</div>
+<div class="cu-22">
+<div class="btn btn-secundario--sutil">Cancelar</div>
+<div class="btn btn-primario">Salvar alterações</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
