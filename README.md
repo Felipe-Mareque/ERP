@@ -83,7 +83,7 @@ As páginas em `frontTemporario/pages/` são HTML completos — basta abrir qual
 
 
 
-> Apenas o Dashboard tem links reais de navegação entre as telas por enquanto. As demais páginas ainda serão conectadas quando a treeview em JavaScript estiver pronta.
+> Algumas telas tem navegação à feito de estudo em Java Script. As demais páginas ainda serão conectadas quando a treeview em JavaScript estiver pronta.
 
 ---
 

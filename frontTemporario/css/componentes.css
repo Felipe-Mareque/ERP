@@ -232,13 +232,11 @@
   background: #fff;
 }
 
-.pill--ativo {
-  padding: 6px 14px;
-  border-radius: 20px;
+.pill.ativo {
   background: var(--moss);
   color: #fff;
-  font-size: 11px;
   font-weight: 500;
+  border-color: var(--moss);
 }
 
 /* ---------- Dropdown/seletor com chevron ---------- */
