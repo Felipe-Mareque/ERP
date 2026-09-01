@@ -18,11 +18,11 @@
 
 <div class="sidebar">
 <div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
-<div class="sidebar-item"><i class="ti ti-home cu-2" aria-hidden="true"></i>Painel</div>
-<div class="sidebar-item"><i class="ti ti-package cu-2" aria-hidden="true"></i>Produtos</div>
-<div class="sidebar-item"><i class="ti ti-users cu-2" aria-hidden="true"></i>Clientes</div>
+<a href="../dashboard/dashboard.html" class="sidebar-item"><i class="ti ti-home cu-2" aria-hidden="true"></i>Painel</a>
+<a href="../produtos/listagem_produtos.html" class="sidebar-item"><i class="ti ti-package cu-2" aria-hidden="true"></i>Produtos</a>
+<a href="../clientes/listagem_clientes.html" class="sidebar-item"><i class="ti ti-users cu-2" aria-hidden="true"></i>Clientes</a>
 <div class="sidebar-spacer"></div>
-<div><div class="sidebar-item--expandable sidebar-item--active"><span class="cu-5"><i class="ti ti-settings cu-2" aria-hidden="true"></i>Configurações</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens--recuo2"><div class="sidebar-subitem--ativo">Usuários</div><div class="sidebar-subitem">Perfis e permissões</div><div class="sidebar-subitem">Menu do sistema</div></div></div>
+<div><div class="sidebar-item--expandable sidebar-item--active"><span class="cu-5"><i class="ti ti-settings cu-2" aria-hidden="true"></i>Configurações</span><i class="ti ti-chevron-down" aria-hidden="true"></i></div><div class="sidebar-subitens--recuo2"><a href="listagem_usuarios.html" class="sidebar-subitem--ativo">Usuários</a><a href="perfis_permissoes.html" class="sidebar-subitem">Perfis e permissões</a><a href="config_menu_sistema.html" class="sidebar-subitem">Menu do sistema</a></div></div>
 </div>
 
 <div class="conteudo conteudo--scroll conteudo--estreito">
@@ -170,7 +170,7 @@
 <option>Estoquista</option>
 <option>Gerente</option>
 </select>
-<span class="cu-17">Define o que este usuário pode ver e fazer no sistema. <span class="cu-18">Gerenciar perfis</span></span>
+<span class="cu-17">Define o que este usuário pode ver e fazer no sistema. <a href="perfis_permissoes.html" class="cu-18">Gerenciar perfis</a></span>
 </div>
 
 <div class="form-grupo">
@@ -197,7 +197,7 @@
 <div class="cu-21">
 <div class="btn btn-perigo">Excluir usuário</div>
 <div class="cu-22">
-<div class="btn btn-secundario--sutil">Cancelar</div>
+<a href="listagem_usuarios.html" class="btn btn-secundario--sutil">Cancelar</a>
 <div class="btn btn-primario">Salvar alterações</div>
 </div>
 </div>

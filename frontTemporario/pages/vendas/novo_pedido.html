@@ -17,11 +17,11 @@
 
 <div class="sidebar">
 <div class="sidebar-logo"><i class="ti ti-leaf" aria-hidden="true"></i>Verdant erp</div>
-<div class="sidebar-item"><i class="ti ti-home" aria-hidden="true"></i>Painel</div>
-<div class="sidebar-item"><i class="ti ti-package" aria-hidden="true"></i>Produtos</div>
-<div class="sidebar-item"><i class="ti ti-users" aria-hidden="true"></i>Clientes</div>
-<div class="sidebar-item sidebar-item--active"><i class="ti ti-shopping-cart" aria-hidden="true"></i>Vendas</div>
-<div class="sidebar-subitens"><div class="sidebar-subitem--ativo">Pedidos</div><div class="sidebar-subitem">Histórico</div></div>
+<a href="../dashboard/dashboard.html" class="sidebar-item"><i class="ti ti-home" aria-hidden="true"></i>Painel</a>
+<a href="../produtos/listagem_produtos.html" class="sidebar-item"><i class="ti ti-package" aria-hidden="true"></i>Produtos</a>
+<a href="../clientes/listagem_clientes.html" class="sidebar-item"><i class="ti ti-users" aria-hidden="true"></i>Clientes</a>
+<a href="listagem_pedidos.html" class="sidebar-item sidebar-item--active"><i class="ti ti-shopping-cart" aria-hidden="true"></i>Vendas</a>
+<div class="sidebar-subitens"><a href="listagem_pedidos.html" class="sidebar-subitem--ativo">Pedidos</a><div class="sidebar-subitem">Histórico</div></div>
 </div>
 
 <div class="conteudo conteudo--scroll">
@@ -44,7 +44,7 @@
 <div style="display:flex;align-items:center;gap:8px;border:0.5px solid var(--line);border-radius:8px;padding:8px 10px;background:#fff;margin-bottom:10px">
 <i class="ti ti-search" style="font-size:13px;color:var(--sub)" aria-hidden="true"></i>
 <span style="font-size:12px;color:var(--sub);flex:1">Buscar cliente por nome, CPF/CNPJ ou código...</span>
-<span style="font-size:11px;color:var(--moss);font-weight:500;display:flex;align-items:center;gap:4px"><i class="ti ti-plus" style="font-size:12px" aria-hidden="true"></i>Novo cliente</span>
+<a href="../clientes/cadastro_cliente.html" style="font-size:11px;color:var(--moss);font-weight:500;display:flex;align-items:center;gap:4px"><i class="ti ti-plus" style="font-size:12px" aria-hidden="true"></i>Novo cliente</a>
 </div>
 
 <div style="display:flex;align-items:center;gap:10px;background:var(--sec-bg);border-radius:8px;padding:10px 12px">
@@ -139,7 +139,7 @@
 </div>
 
 <div class="form-acoes">
-<div class="btn btn-secundario--sutil">Cancelar</div>
+<a href="listagem_pedidos.html" class="btn btn-secundario--sutil">Cancelar</a>
 <div class="btn btn-primario">Salvar pedido</div>
 </div>
 

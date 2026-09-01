@@ -77,6 +77,7 @@ const precos = produtos.map(produto =>{
 
 })
 
+
 const estoques = produtos.map (produto => {
     return produto.estoque;
 })
@@ -86,4 +87,4 @@ const informacoes = produtos.map (produto => {
         ${produto.nome} - R$ ${produto.preco}
     `;
     return frases;
-})
+}); 
