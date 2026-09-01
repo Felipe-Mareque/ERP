@@ -34,7 +34,7 @@ else if ( inputSenha.value != senhaFake){
 }
 
 if  (inputEmail.value === emailFake && inputSenha.value === senhaFake){
-window.location.href = "dashboard.html";
+window.location.href = "../dashboard/dashboard.html";
 }
 else {
     erroEmail.textContent = "Digite o email novamente ";
