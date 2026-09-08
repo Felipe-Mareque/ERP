@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nome": "Ka",
+        "categoria": "Automóvel",
+        "preco": 15000,
+        "estoque": 10
+    },
+    {
+        "id": 2,
+        "nome": "Gol",
+        "categoria": "Automóvel",
+        "preco": 25000,
+        "estoque": 5
+    },
+    {
+        "id": 3,
+        "nome": "Onix",
+        "categoria": "Automóvel",
+        "preco": 35000,
+        "estoque": 8
+    }
+]
