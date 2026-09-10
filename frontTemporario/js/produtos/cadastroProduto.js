@@ -132,6 +132,10 @@ formulario.addEventListener("submit",function(event){
 }
 )
 
+botaoCancelar.addEventListener("click", function(){
+    window.history.back();
+})
+
 precoVenda.addEventListener("input",function(){
 
     const margem = calcularMargem(precoCusto, precoVenda);

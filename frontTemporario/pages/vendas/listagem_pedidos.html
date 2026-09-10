@@ -121,14 +121,12 @@
 
 </div>
 
-<div class="paginacao">
-<span class="paginacao__info">Mostrando 4 de 512 pedidos</span>
+<div class="paginacao" id="paginacaoPedidos">
+<span class="paginacao__info">Mostrando 0 de 0 pedidos</span>
 <div class="paginacao__botoes">
-<div class="paginacao__pagina"><i class="ti ti-chevron-left" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
-<div class="paginacao__pagina--ativa">1</div>
-<div class="paginacao__pagina">2</div>
-<div class="paginacao__pagina">3</div>
-<div class="paginacao__pagina"><i class="ti ti-chevron-right" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
+<div class="paginacao__pagina paginacao__pagina--anterior" data-acao="anterior"><i class="ti ti-chevron-left" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
+<!-- Os números de página são inseridos aqui pelo JS (paginizacao.js) -->
+<div class="paginacao__pagina paginacao__pagina--proxima" data-acao="proxima"><i class="ti ti-chevron-right" style="font-size:12px;color:var(--sub)" aria-hidden="true"></i></div>
 </div>
 </div>
 
@@ -136,6 +134,7 @@
 
 </div>
 
+<script src="../../js/comum/paginizacao.js"></script>
 <script src="../../js/comum/sidebar.js"></script>
 </body>
 </html>

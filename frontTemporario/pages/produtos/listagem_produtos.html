@@ -413,15 +413,15 @@
 
 
         <!-- Paginação -->
-        <div class="paginacao">
+        <div class="paginacao" id="paginacaoProdutos">
 
             <span class="paginacao__info">
-                Mostrando 5 de 128 produtos
+                Mostrando 0 de 0 produtos
             </span>
 
             <div class="paginacao__botoes">
 
-                <div class="paginacao__pagina">
+                <div class="paginacao__pagina paginacao__pagina--anterior" data-acao="anterior">
                     <i
                         class="ti ti-chevron-left"
                         style="font-size:12px;color:var(--sub)"
@@ -429,19 +429,9 @@
                     ></i>
                 </div>
 
-                <div class="paginacao__pagina--ativa">
-                    1
-                </div>
+                <!-- Os números de página são inseridos aqui pelo JS (paginizacao.js) -->
 
-                <div class="paginacao__pagina">
-                    2
-                </div>
-
-                <div class="paginacao__pagina">
-                    3
-                </div>
-
-                <div class="paginacao__pagina">
+                <div class="paginacao__pagina paginacao__pagina--proxima" data-acao="proxima">
                     <i
                         class="ti ti-chevron-right"
                         style="font-size:12px;color:var(--sub)"
@@ -457,6 +447,7 @@
 
 </div>
 
+<script src="../../js/comum/paginizacao.js"></script>
 <script src="../../js/produtos/pesquisaProduto.js"></script>
 <script src="../../js/produtos/filtroProdutos.js"></script>
 <script src="../../js/produtos/listagemProdutos.js"></script>

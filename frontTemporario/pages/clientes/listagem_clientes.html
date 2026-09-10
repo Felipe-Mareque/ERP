@@ -137,15 +137,15 @@
 
 
         <!-- PAGINAÇÃO -->
-        <div class="paginacao">
+        <div class="paginacao" id="paginacaoClientes">
 
-            <span class="paginacao__info" id="informacaoPaginacao">
+            <span class="paginacao__info">
                 Mostrando 0 de 0 clientes
             </span>
 
             <div class="paginacao__botoes">
 
-                <div class="paginacao__pagina" id="paginaAnterior">
+                <div class="paginacao__pagina paginacao__pagina--anterior" data-acao="anterior">
                     <i
                         class="ti ti-chevron-left"
                         style="font-size:12px;color:var(--sub)"
@@ -153,27 +153,9 @@
                     </i>
                 </div>
 
-                <div class="paginacao__pagina--ativa">
-                    1
-                </div>
+                <!-- Os números de página são inseridos aqui pelo JS (paginizacao.js) -->
 
-                <div class="paginacao__pagina">
-                    2
-                </div>
-
-                <div class="paginacao__pagina">
-                    3
-                </div>
-
-                <div class="paginacao__pagina">
-                    4
-                </div>
-
-                <div class="paginacao__pagina">
-                    5
-                </div>
-
-                <div class="paginacao__pagina" id="paginaProxima">
+                <div class="paginacao__pagina paginacao__pagina--proxima" data-acao="proxima">
                     <i
                         class="ti ti-chevron-right"
                         style="font-size:12px;color:var(--sub)"
@@ -190,6 +172,7 @@
 </div>
 
 <!-- JavaScript -->
+<script src="../../js/comum/paginizacao.js"></script>
 <script src="../../js/clientes/listagemClientes.js"></script>
 
 <script src="../../js/comum/sidebar.js"></script>
