@@ -160,3 +160,16 @@
   display: flex;
   gap: 8px;
 }
+
+/* ---------- Suporte para TreeView expansível/recolhível da sidebar ---------- */
+.sidebar-subitens--recolhido {
+  display: none;
+}
+
+.sidebar-item--expandable .ti-chevron-down {
+  transition: transform 0.15s ease;
+}
+
+.sidebar-item--expandable.aberto .ti-chevron-down {
+  transform: rotate(180deg);
+}
