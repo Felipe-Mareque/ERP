@@ -42,94 +42,100 @@ const clientes = [
 
 ];
 
-function renderizarClientes(clientesParaMostrar){
-      const listaClientes = document.getElementById("listaClientes");
-    listaClientes.innerHTML = "";
-      
-    clientesParaMostrar.forEach(function(cliente){
 
-         const linha = document.createElement("div");
-    linha.style.display = "grid";
-    linha.style.gridTemplateColumns = "44px 1.6fr 1.1fr  1fr 90px";
+function renderizarClientes(clientesParaMostrar) {
+
+    const listaClientes = document.getElementById("listaClientes");
+
+    const linhas = clientesParaMostrar.map(cliente => {
+        const statusAtivo = cliente.status === "Ativo";
+        const badgeClasse = statusAtivo ? "badge--ok" : "badge--off";
+
+        return `
+        <div class="linha-tabela" style="display:grid;grid-template-columns:44px 1.6fr 1.1fr 1fr 90px">
+            <div></div>
+            <div>${cliente.nome}</div>
+            <div>${cliente.documento}</div>
+            <div>${cliente.telefone}</div>
+            <div class="badge ${badgeClasse}">
+                <span class="badge__dot"></span>
+                <span>${statusAtivo ? "Ativo" : "Inativo"}</span>
+            </div>
+        </div>
+        `;
+    });
+
+    listaClientes.innerHTML = linhas.join("");
+}
 
 
-    linha.classList.add("linha-tabela");
+function aplicarFiltros(filtroStatus, textoBusca) {
 
+    let listaClientes;
 
+    if (filtroStatus === "Todos") {
+        // aqui usarei clientes
+        listaClientes = clientes;
 
-    listaClientes.appendChild(linha);
-    console.log(listaClientes);
+    } else if (filtroStatus === "Ativo") {
+        // aqui usarei clientesAtivos
+        listaClientes = clientesAtivos;
 
-    const espacoVazio = document.createElement("div");
-    linha.appendChild(espacoVazio);
-
-    const nome = document.createElement("div");
-    nome.textContent = cliente.nome;
-    linha.appendChild(nome);
-
-    const documento = document.createElement("div");
-    documento.textContent = cliente.documento;
-
-    linha.appendChild(documento);
-
-    const telefone = document.createElement("div");
-    telefone.textContent = cliente.telefone;
-    linha.appendChild(telefone);
-
-    const status = document.createElement("div");
-
-    status.classList.add("badge");
-
-    const bolinha = document.createElement("span");
-    bolinha.classList.add("badge__dot");
-
-    const textoStatus = document.createElement("span");
-    textoStatus.textContent = cliente.status;
-
-    if ( cliente.status === "Ativo"){
-        status.classList.add("badge--ok");
+    } else {
+        // aqui usarei clientesInativos
+        listaClientes = clientesInativos;
     }
 
-    else {
-        status.classList.add("badge--off");
-    }
+    let listaClientesCorreta = listaClientes.filter(function(cliente) {
 
-        linha.appendChild(status);
-        status.appendChild(bolinha);
-        status.appendChild(textoStatus);
-    }
+        return cliente.nome.toLowerCase().includes(textoBusca) ||
+               cliente.documento.includes(textoBusca) ||
+               cliente.telefone.includes(textoBusca);
+    });
 
-)}
+    renderizarClientes(listaClientesCorreta);
+}
 
 
-const clientesAtivos = clientes.filter(cliente => cliente.status === "Ativo");
-const clientesInativos = clientes.filter(cliente => cliente.status === "Inativo" );
+const clientesAtivos = clientes.filter(
+    cliente => cliente.status === "Ativo"
+);
+
+const clientesInativos = clientes.filter(
+    cliente => cliente.status === "Inativo"
+);
 
 
 const campoBuscaCliente = document.getElementById("campoBusca");
-
 const grupoFiltros = document.getElementById("grupoFiltrosStatus");
 
-grupoFiltros.addEventListener("click", function(event){
+let filtroStatus = "Todos";
+let textoBusca = "";
+
+
+renderizarClientes(clientes);
+
+
+grupoFiltros.addEventListener("click", function(event) {
+
     const status = event.target.dataset.status;
 
     const botoes = grupoFiltros.children;
 
-    for (let botao of botoes){
+    for (let botao of botoes) {
         botao.classList.remove("ativo");
     }
 
     event.target.classList.add("ativo");
 
-    if ( status === "Todos" ){
-        renderizarClientes(clientes);
-    }
-    else if ( status === "Ativo" ){
-        renderizarClientes(clientesAtivos);
-    }
-    else {
-        renderizarClientes(clientesInativos);
-    }
-})
-renderizarClientes(clientes);
+    filtroStatus = status;
+    aplicarFiltros(filtroStatus, textoBusca);
+});
 
+
+campoBuscaCliente.addEventListener("input", function(event) {
+
+    textoBusca = campoBuscaCliente.value.toLowerCase();
+
+    aplicarFiltros(filtroStatus, textoBusca);
+});
