@@ -53,6 +53,12 @@
   justify-content: space-between;
   padding: 7px 8px;
   border-radius: 7px;
+  color: #e3ebe2;
+  cursor: pointer;
+}
+
+.sidebar-item--expandable i {
+  font-size: 14px;
 }
 
 .sidebar-item--expandable.sidebar-item--active {
