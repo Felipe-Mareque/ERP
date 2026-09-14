@@ -1,4 +1,4 @@
-const clientes = [
+/* const clientes = [
 
     {
         id: 1,
@@ -40,7 +40,9 @@ const clientes = [
         status: "Ativo"
     }
 
-];
+]; */
+
+import { clientes } from "./dadosClientes.js";
 
 const paginacaoClientes = new paginizacao(clientes, 3, "paginacaoClientes",
     (itensDaPagina) => {
