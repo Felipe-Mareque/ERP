@@ -42,6 +42,12 @@ const clientes = [
 
 ];
 
+const paginacaoClientes = new paginizacao(clientes, 3, "paginacaoClientes",
+    (itensDaPagina) => {
+        renderizarClientes(itensDaPagina);
+    }
+);
+console.log(paginacaoClientes);
 
 function renderizarClientes(clientesParaMostrar) {
 
@@ -93,7 +99,12 @@ function aplicarFiltros(filtroStatus, textoBusca) {
                cliente.telefone.includes(textoBusca);
     });
 
-    renderizarClientes(listaClientesCorreta);
+    // CORREÇÃO: antes havia uma chamada manual a renderizarClientes(...) aqui,
+    // logo depois de atualizarItens(). Isso duplicava a responsabilidade de
+    // renderizar, que agora já é feita automaticamente dentro da classe
+    // (veja o comentário em atualizarItens(), no paginizacao.js). A linha
+    // removida era: renderizarClientes(paginacaoClientes.obterItensPagina());
+    paginacaoClientes.atualizarItens(listaClientesCorreta);
 }
 
 
@@ -113,7 +124,7 @@ let filtroStatus = "Todos";
 let textoBusca = "";
 
 
-renderizarClientes(clientes);
+renderizarClientes(paginacaoClientes.obterItensPagina());
 
 
 grupoFiltros.addEventListener("click", function(event) {
