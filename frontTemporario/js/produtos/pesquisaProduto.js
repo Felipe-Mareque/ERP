@@ -1,6 +1,8 @@
 
 const campoBusca = document.getElementById("campo-busca-produto");
 
+/* ===== CÓDIGO ANTIGO (busca escondendo linhas direto no DOM, sem paginação) — mantido como comentário =====
+
 campoBusca.addEventListener("input", function() {
 
     const busca = campoBusca.value.toLowerCase();
@@ -28,3 +30,15 @@ campoBusca.addEventListener("input", function() {
 
 });
 
+===== FIM DO CÓDIGO ANTIGO ===== */
+
+
+// mesmo padrão de listagemClientes.js: a busca só atualiza o texto e
+// pede pra aplicarFiltrosProdutos (em listagemProdutos.js) refazer a
+// filtragem do array e repaginar
+campoBusca.addEventListener("input", function() {
+
+    textoBuscaProduto = campoBusca.value.toLowerCase();
+
+    aplicarFiltrosProdutos(filtroStatusProduto, textoBuscaProduto);
+});
