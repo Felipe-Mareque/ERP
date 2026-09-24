@@ -23,6 +23,7 @@ export class Sidebar {
         this.menuVendasAberto = !this.menuVendasAberto;
     }
 
+
     alternarFinanceiro(){
         this.menuFinanceiroAberto = !this.menuFinanceiroAberto;
     }
@@ -30,4 +31,28 @@ export class Sidebar {
     alternarConfiguracoes(){
         this.menuConfiguracoesAberto = !this.menuConfiguracoesAberto;
     }
+
+    menus = [
+    {
+        id: 1,
+        nome: 'Produtos'
+    },
+    {
+        id: 2,
+        nome: 'Clientes'
+    },
+    {
+        id: 3,
+        nome: 'Vendas'
+    },
+    {
+        id: 4,
+        nome: 'Financeiro'
+    },
+    {
+        id: 5,
+        nome: 'Configurações'
+    }
+
+];
 }

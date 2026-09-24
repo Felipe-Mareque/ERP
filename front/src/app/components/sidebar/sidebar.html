@@ -146,4 +146,9 @@
         Suporte
     </a>
 
+    @for (menu of menus; track menu.id) {
+    <p>{{ menu.nome }}</p>
+    <p>{{menu.id}}</p>
+}
+
 </div>
