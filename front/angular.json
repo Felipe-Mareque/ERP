@@ -24,7 +24,28 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.css"]
+            "styles": [
+              "src/styles.css",
+              "src/app/css/base.css",
+              "src/app/css/layout.css",
+              "src/app/css/componentes.css",
+              "src/app/css/paginas/login.css",
+              "src/app/css/paginas/dash.css",
+              "src/app/css/paginas/modal.css",
+              "src/app/css/paginas/pp.css",
+              "src/app/css/paginas/cc.css",
+              "src/app/css/paginas/np.css",
+              "src/app/css/paginas/cp.css",
+              "src/app/css/paginas/ci.css",
+              "src/app/css/paginas/lp.css",
+              "src/app/css/paginas/lpr.css",
+              "src/app/css/paginas/cm.css",
+              "src/app/css/paginas/ec.css",
+              "src/app/css/paginas/lc.css",
+              "src/app/css/paginas/lu.css",
+              "src/app/css/paginas/du.css",
+              "src/app/css/paginas/cu.css"
+            ]
           },
           "configurations": {
             "production": {

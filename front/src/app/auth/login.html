@@ -1,0 +1,89 @@
+
+<div class="tela" style="min-height:460px">
+
+<div class="login-lado-form">
+
+<div class="login-marca">
+<div class="login-marca__icone"><i class="ti ti-leaf" aria-hidden="true"></i></div>
+<span class="login-marca__nome">Verdant erp</span>
+</div>
+
+<div class="login-titulo">
+<span class="login-titulo__principal">Acesse sua conta</span>
+<span class="form-label" style="font-size:13px">Insira suas credenciais para continuar.</span>
+</div>
+
+<form id="form-login" novalidate>
+
+<div class="form-secao" style="gap:14px">
+
+<div class="form-grupo">
+<label class="form-label" style="font-size:12px" for="input-email">Email corporativo</label>
+<div class="login-input" id="grupo-email">
+<i class="ti ti-mail" aria-hidden="true"></i>
+<input
+    type="email"
+    id="input-email"
+    name = "email"
+    placeholder="nome@empresa.com"
+    [(ngModel)]="email"
+>
+<p>{{ email }}</p>
+</div>
+<span class="mensagem-erro" id="erro-email"></span>
+</div>
+
+<div class="form-grupo">
+<label class="form-label" style="font-size:12px" for="input-senha">Senha</label>
+<div class="login-input" id="grupo-senha">
+<i class="ti ti-lock" aria-hidden="true"></i>
+<input type="password" id="input-senha" name = "senha" placeholder="••••••••••" style="flex:1"  [(ngModel)]="senha">
+<i class="ti ti-eye" id="botao-mostrar-senha" aria-hidden="true"></i>
+</div>
+<span class="mensagem-erro" id="erro-senha"></span>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center">
+<label class="radio-item--inativo" id="label-lembrar">
+<span class="login-checkbox" id="checkbox-lembrar"></span>Lembrar de mim
+</label>
+<span class="badge__link" style="font-size:12px;color:var(--moss);font-weight:500;cursor:pointer">Esqueci minha senha</span>
+</div>
+
+<span class="mensagem-erro" [class.mensagem-erro--visivel]="mensagemErro" id="erro-geral">{{ mensagemErro }}</span>
+
+<button type="button" (click) = "entrar()" id="botao-entrar" class="btn btn-primario" style="justify-content:center;width:100%;padding:11px;border-radius:9px;font-size:13px;border:none;cursor:pointer;margin-top:4px">
+    Entrar
+
+</button>
+
+</div>
+
+</form>
+
+<div class="login-divisor">
+<div class="login-divisor__linha"></div>
+<span class="form-label">ou</span>
+<div class="login-divisor__linha"></div>
+</div>
+
+<button type="button" class="login-sso" style="border:0.5px solid var(--line);cursor:pointer">
+<i class="ti ti-building" aria-hidden="true"></i>Entrar com SSO
+</button>
+
+<span class="form-label" style="text-align:center">Precisa de ajuda? <span style="color:var(--moss);font-weight:500">Fale com o suporte</span></span>
+
+</div>
+
+<div class="login-lado-video">
+<div class="login-lado-video__overlay"></div>
+<div class="login-lado-video__tag"><i class="ti ti-player-play" aria-hidden="true"></i>Vídeo institucional</div>
+<div class="login-lado-video__texto">
+<span class="login-lado-video__titulo">Gestão que cresce com você</span>
+<span class="login-lado-video__desc">Centralize produtos, vendas e financeiro em uma única plataforma pensada para o seu negócio.</span>
+</div>
+</div>
+
+</div>
+
+

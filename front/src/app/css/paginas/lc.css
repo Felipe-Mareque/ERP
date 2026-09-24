@@ -1,0 +1,71 @@
+/* ============================================
+   lc.css — estilos específicos da página "Clientes"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.lc-1 {
+  min-height: 540px;
+}
+
+.lc-2 {
+  font-size: 13px;
+}
+
+.lc-3 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.lc-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lc-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lc-6 {
+  display: flex;
+  gap: 6px;
+}
+
+.lc-7 {
+  display: grid;
+  grid-template-columns: 44px 1.6fr 1.1fr 1fr 90px;
+  padding: 9px 14px;
+  background: var(--sec-bg);
+  font-size: 11px;
+  color: var(--sub);
+  font-weight: 500;
+}
+
+.lc-8 {
+  text-align: center;
+}
+
+.lc-9 {
+  display: grid;
+  grid-template-columns: 44px 1.6fr 1.1fr 1fr 90px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 0.5px solid var(--line);
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.lc-10 {
+  color: var(--sub);
+}
+
+.lc-11 {
+  display: grid;
+  grid-template-columns: 44px 1.6fr 1.1fr 1fr 90px;
+  align-items: center;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--ink);
+}

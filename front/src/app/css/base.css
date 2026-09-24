@@ -1,0 +1,68 @@
+/* ============================================
+   base.css — variáveis de cor, reset, tipografia
+   ============================================ */
+
+:root {
+  /* Paleta principal */
+  --bdark: #14311f;
+  --moss: #5f7f62;
+  --moss-l: #9ebb9f;
+  --moss-pale: #e2ebe1;
+  --moss-mid: #c7d8c6;
+
+  /* Fundos */
+  --bg: #f2f5f1;
+  --sec-bg: #e6ede4;
+
+  /* Texto */
+  --ink: #1b251e;
+  --sub: #71806f;
+
+  /* Bordas */
+  --line: #d5e0d3;
+
+  /* Status */
+  --danger: #b1493d;
+  --danger-bg: #f7e5e2;
+  --ok: #3f7a4f;
+  --ok-bg: #e4f0e5;
+  --off: #a3733f;
+  --off-bg: #f1e9e2;
+  --warn: #a3733f;
+  --warn-bg: #f1e9e2;
+  --info: #3b6ea5;
+  --info-bg: #e3ecf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* Wrapper padrão de cada tela (substitui o style inline do <div> raiz) */
+.tela {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  display: flex;
+  width: 100%;
+  background: var(--bg);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 0.5px solid var(--line);
+}
+
+.tela--coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --good é um alias de --ok, usado especificamente no dashboard original */
+:root {
+  --good: #3f7a4f;
+}

@@ -1,0 +1,38 @@
+/* ============================================
+   cc.css — estilos específicos da página "Cadastro de Cliente"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.cc-1 {
+  min-height: 900px;
+}
+
+.cc-2 {
+  justify-content: flex-end;
+}
+
+.cc-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 160px;
+}
+
+.cc-4 {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 10px;
+}
+
+.cc-5 {
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: 10px;
+}
+
+.cc-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 200px;
+}

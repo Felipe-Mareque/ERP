@@ -1,0 +1,44 @@
+/* ============================================
+   ci.css — estilos específicos da página "Cadastro de Item"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.ci-1 {
+  text-align: center;
+  font-size: 12px;
+  color: var(--sub);
+  margin-bottom: 16px;
+}
+
+.ci-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ci-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ci-4 {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--moss);
+  background: var(--moss-pale);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.ci-5 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.ci-6 {
+  font-size: 11px;
+  color: var(--sub);
+  font-weight: 500;
+}

@@ -1,0 +1,228 @@
+/* ============================================
+   login.css — estilos específicos da página "Login"
+   (gerado automaticamente a partir do que restava inline)
+   ============================================ */
+
+.login-1 {
+  min-height: 460px;
+}
+
+.login-2 {
+  font-size: 18px;
+  color: var(--moss-l);
+}
+
+.login-3 {
+  font-size: 15px;
+  color: var(--sub);
+}
+
+.login-4 {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.login-5 {
+  font-size: 11px;
+}
+
+.login-6 {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 48px;
+  gap: 28px;
+  background: var(--bg);
+}
+
+.login-7 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-8 {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--bdark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-9 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.login-10 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.login-11 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.login-12 {
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.login-13 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-14 {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.login-15 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+.login-16 {
+  font-size: 13px;
+  color: var(--sub);
+  flex: 1;
+}
+
+.login-17 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-18 {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 0.5px solid var(--line);
+  background: #fff;
+  display: inline-block;
+}
+
+.login-19 {
+  font-size: 12px;
+  color: var(--moss);
+  font-weight: 500;
+}
+
+.login-20 {
+  background: var(--moss);
+  color: #fff;
+  text-align: center;
+  padding: 11px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.login-21 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.login-22 {
+  flex: 1;
+  height: 0.5px;
+  background: var(--line);
+}
+
+.login-23 {
+  font-size: 11px;
+  color: var(--sub);
+}
+
+.login-24 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0.5px solid var(--line);
+  border-radius: 9px;
+  padding: 9px;
+  background: #fff;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.login-25 {
+  font-size: 11px;
+  color: var(--sub);
+  text-align: center;
+}
+
+.login-26 {
+  color: var(--moss);
+  font-weight: 500;
+}
+
+.login-27 {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  background: var(--bdark);
+  display: flex;
+  align-items: flex-end;
+  padding: 32px;
+}
+
+.login-28 {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20,49,31,0.15) 0%, rgba(20,49,31,0.75) 100%);
+}
+
+.login-29 {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.1);
+  color: #e3ebe2;
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.login-30 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-31 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.login-32 {
+  font-size: 12px;
+  color: #c3d4c4;
+  max-width: 280px;
+  line-height: 1.5;
+}
