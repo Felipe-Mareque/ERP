@@ -17,6 +17,7 @@ interface Cliente {
     cidade: string;
     uf: string;
     cep: string;
+    ativo: boolean;
 }
 
 @Component({
@@ -27,7 +28,7 @@ interface Cliente {
 export class EdicaoClienteComponent {
 
     cliente: Cliente ={
-    nome: 'João da Silva',
+    nome: 'Felipaço',
     tipo: 'Pessoa física',
     cpfCnpj: '123.456.789-00',
     nomeFantasia: '',
@@ -39,6 +40,7 @@ export class EdicaoClienteComponent {
     numero: '1290',
     cidade: 'Pelotas',
     uf: 'RS',
-    cep: '96015-560'
+    cep: '96015-560',
+    ativo: false
     };
 }
