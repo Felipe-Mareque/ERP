@@ -41,6 +41,22 @@ export class EdicaoClienteComponent {
     cidade: 'Pelotas',
     uf: 'RS',
     cep: '96015-560',
-    ativo: false
+    ativo: true
     };
+
+    desativarCliente(){
+        this.cliente.ativo = false;
+    }
+
+    ativarCliente(){
+        this.cliente.ativo = true;
+    }
+
+    alternarStatusCliente(){
+        if (this.cliente.ativo) {
+            this.desativarCliente();
+        } else {
+            this.ativarCliente();
+        }
+    }
 }

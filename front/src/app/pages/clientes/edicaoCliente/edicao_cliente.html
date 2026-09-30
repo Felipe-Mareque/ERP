@@ -203,9 +203,15 @@
 
         <div class="form-acoes">
 
-            <div class="btn btn-perigo">
-                Desativar cliente
+    
+            <div class="btn"
+                [class.btn-perigo]="cliente.ativo"
+                [class.btn-primario]="!cliente.ativo"
+                (click)="alternarStatusCliente()">
+                 {{ cliente.ativo ? 'Desativar cliente' : 'Ativar cliente' }}
             </div>
+
+
 
             <div class="form-acoes__direita">
 
